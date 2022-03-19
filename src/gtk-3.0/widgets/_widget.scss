@@ -1,0 +1,20 @@
+ *{
+    -gtk-icon-style: regular; // disable symbolic icons 
+ }
+ 
+.background {
+  color: $control_fg;
+  background-color: $control_bg;
+}
+
+*:disabled { @include disabled; }
+
+.gtkstyle-fallback {
+  color: $control_fg;
+  background-color: $control_bg;
+
+  &:selected {
+    color: $selected_fg;
+    background-color: $selected_bg;
+  }
+}

@@ -1,0 +1,32 @@
+
+
+.view,
+%view {
+
+  outline: none;
+  color: $document_fg;
+  background-color: $document_bg;
+  
+  header{
+	background-color:$control_bg;
+	color:$control_fg;
+  }
+  &:disabled {
+    @include disabled;
+  }
+
+  &:selected {
+    &:focus, & {
+      @extend %selected_items;
+
+      border-radius: 3px;
+    }
+  }
+}
+.view,
+textview {
+  text {
+    @extend %view;
+    selection { &:focus, & { @extend %selected_items; }}
+  }
+}

@@ -1,0 +1,31 @@
+@mixin separator_base {
+    min-width: 2px;
+    min-height: 2px;
+	background: none;
+}
+@mixin hseparator {
+		box-shadow: $separator_horiz;
+}
+@mixin vseparator {
+		box-shadow: $separator_verti;
+}
+
+separator.horizontal,
+menu.separator,
+menuitem.separator,
+menu separator,
+menuitem separator
+{
+	@include separator_base;
+	@include hseparator;
+}
+
+separator.vertical,
+toolbar.separator,
+toolbar separator,
+toolbar .separator,
+.primary-toolbar separator
+{
+	@include separator_base;
+	@include vseparator;
+}

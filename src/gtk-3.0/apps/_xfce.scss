@@ -1,0 +1,112 @@
+
+.XfceHeading {
+    margin: 0;
+    padding: 0;
+    border-width: 0;
+    background-image: none;
+}
+
+.xfce4-panel.background {
+    background-color: $control_bg;
+    color: $control_fg;
+    font-weight: normal;
+    padding: 2px;
+    button {
+        background-image: none;
+        background-color: transparent;
+        border-radius: 0;
+        border-color: transparent;
+        box-shadow: none;
+        padding: 0 1px;
+        color: $control-fg;
+
+    }
+    menu {
+        -gtk-icon-effect: none;
+
+        text-shadow: none;
+    }
+}
+//////////////////
+// WHISKER MENU //
+//////////////////
+.whiskermenu{
+	padding: 0;
+	frame{
+		@include border(menu);
+		padding:0px;
+		border{
+			border:none;
+		}
+	}
+	
+	/* Header of whisker menu */
+	.title-area{
+		margin: -3px; // to fix spacing
+		background-color: $titlebar-bg-start;
+		color: $titlebar-fg-color;
+		background-image: linear-gradient(to right, $titlebar-bg-start, $titlebar-bg-end);
+		label{
+		
+			font-weight: bold;
+			font-family: "Tahoma Bold", Tahoma, "Noto Sans";
+			font-size: 9pt;
+		}
+		image{
+			margin-top: 4px;
+			margin-bottom: 4px;
+		}
+		button{
+			box-shadow: none;
+			background-color: transparent;
+		}
+	}
+	/* Sidebar */
+	stack.contents>grid>scrolledwindow{
+		box-shadow: none;
+		button.flat{
+			padding: 4px;
+			margin-top: 1px;
+			margin-bottom: 1px;
+		}
+	}
+	.frame.launchers-pane{
+		box-shadow: $fixed3d_border;
+		padding: 2px;
+	}
+
+
+}
+#XfcePanelWindowWrapper // Panel Buttons
+{
+	
+	#whiskermenu-button{
+		margin:2px;
+		@include button_3d(normal);
+		font-weight: bold;
+		box{
+			padding: 1px;
+		}
+		label{
+			padding-right: 4px;
+		}
+	}
+	#whiskermenu-button:active,
+	#whiskermenu-button:checked{
+		@include button_3d(checked);
+		box{
+			padding-top:2px;
+			padding-left:2px;
+			padding-bottom:0px;
+			padding-right:0px;
+		}
+	}
+	
+}
+
+
+.indicator-button image
+{
+
+	-gtk-icon-transform: scale(0.6666666666) ;
+}

@@ -1,0 +1,35 @@
+scrolledwindow, .border-inset{
+	@include border(textbox);
+	padding:2px;
+}
+notebook>stack>scrolledwindow{
+	box-shadow: none; // Don't show inset borders on direct children of notebooks
+}
+.border-outset{
+	@include button_3d(normal);
+	padding:2px;
+}
+frame.border-ridge,frame.border-groove
+{
+	border{
+		border:none;
+		@include border(toolbar);
+		padding:2px;
+		&.flat{
+			box-shadow:none;
+		}
+	}
+	label{font-weight:normal;}
+}
+frame{
+
+	&.app-notification{
+		background-color:$tooltip_bg;
+		color:$tooltip_fg;
+		border{
+			padding:5px;
+			border:1px solid #555;
+		}
+	}
+
+}

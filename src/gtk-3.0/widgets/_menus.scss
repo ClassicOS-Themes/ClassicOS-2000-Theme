@@ -1,0 +1,83 @@
+/********
+ * menu *
+ ********/
+menu,
+.menu {
+    margin: 4px; /* avoid minify of menu */
+    padding: 3px;
+    background-color: $control_bg;
+    color: $control_fg;
+    @include border(menu);
+    &:selected {
+        color: $selected_fg;
+        background-color: $selected_bg;
+    }
+    button {
+        background-color: $control_bg;
+    }
+    > arrow {
+        &.top{
+            margin-top: -3px;
+            -gtk-icon-source: -gtk-icontheme("pan-up-symbolic");
+        }
+        &.bottom{
+            margin-bottom: -3px;
+            -gtk-icon-source: -gtk-icontheme("pan-down-symbolic");  
+        }
+    }
+}
+menuitem,
+menubar menuitem,
+menubar>menuitem,
+menu menuitem,
+menu>menuitem{
+    padding: 3px 5px; // 3px 3px;
+    border: none;
+    background-color: transparent;
+    background-image: none;
+    color: $control_fg;
+    &:hover,
+    &:active {
+        background-color: $selected_bg;
+    }
+    &:hover,
+    &:active,
+    *:active,
+    *:hover {
+        color: $selected_fg;
+    }
+    &:disabled {
+        @include disabled;
+    }
+
+    check,
+    radio {
+        min-height: 14px;
+        min-width: 14px;
+
+        &:dir(ltr) {
+            margin-right: 7px;
+        }
+        &:dir(rtl) {
+            margin-left: 7px;
+        }
+    }
+    arrow{
+
+        min-height: 8px;
+        min-width: 8px;
+        &:dir(ltr) {
+            -gtk-icon-source: -gtk-icontheme("pan-end-symbolic");
+            margin-left: 10px;
+        }
+        &:dir(rtl) {
+            -gtk-icon-source: -gtk-icontheme("pan-end-symbolic-rtl");
+            margin-right: 10px;
+        }
+    }
+}
+menubar {
+    -gtkwidget-window-dragging: true;
+    border-style: none;
+}
+

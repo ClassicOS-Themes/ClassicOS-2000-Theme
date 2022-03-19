@@ -1,0 +1,4 @@
+// Dirty hack to fix massive-height headerbars in some applications
+squeezer>viewswitcher>box.horizontal box.vertical{
+	margin-bottom: -30px; 
+}

@@ -1,0 +1,46 @@
+check,
+radio,
+check:disabled,
+radio:disabled {
+	border-style: none;
+	background-color: $document_bg;
+	// @include border(textbox);
+}
+
+%check,
+check {
+	box-shadow: $check_border;
+	&:disabled {
+		background-color: $control_bg;
+	}
+
+	&:checked {
+		-gtk-icon-source: image(url("assets/check-symbolic.svg"));
+	}
+
+	&:indeterminate {
+		-gtk-icon-source: image(url("assets/indeterminate-symbolic.svg"));
+	}
+	&:checked:disabled{
+		-gtk-icon-source: image(url("assets/check-symbolic-disabled.svg"));
+	}
+}
+
+%radio,
+radio {
+	border-radius: 100%;
+	box-shadow: $radio_border;
+	&:disabled {
+		background-color: $control_bg;
+	}
+	&:checked {
+		-gtk-icon-source: image(url("assets/bullet-symbolic.svg"));
+	}
+
+	&:indeterminate {
+		-gtk-icon-source: image(url("assets/bullet-symbolic-indeterminate.svg"));
+	}
+	&:checked:disabled{
+		-gtk-icon-source: image(url("assets/bullet-symbolic-disabled.svg"));
+	}
+}

@@ -1,0 +1,18 @@
+.nemo-window{
+	.primary-toolbar{
+		margin-bottom:2px;
+	}
+}
+.nemo-window > grid > paned > separator{
+	background:$control_bg;
+	min-width:2px;
+	border-image-width:0px;
+	opacity:0;
+}
+
+.nemo-desktop-window > grid > paned > box > paned,
+.nemo-desktop-window decoration
+{
+	box-shadow:none;
+}
+

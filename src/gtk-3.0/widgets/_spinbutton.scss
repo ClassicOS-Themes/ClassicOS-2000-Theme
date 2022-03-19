@@ -1,0 +1,26 @@
+
+spinbutton {
+	color: $control_fg;
+	@include border(textbox);
+	padding: 2px;
+
+	entry {
+		box-shadow: none;
+	}
+	button {
+		@include combobox_button(normal);
+		&:focus {
+			@include combobox_button(normal);
+		}
+		&:active {
+			@include combobox_button(pressed);
+		}
+	}
+
+	&:disabled {
+		@include border(textbox);
+		entry {
+			box-shadow: none;
+		}
+	}
+}

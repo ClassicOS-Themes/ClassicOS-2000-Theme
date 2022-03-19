@@ -1,0 +1,74 @@
+@mixin disabled{
+		color: $disabled_fg;
+		text-shadow: 1px 1px $highlight;
+		-gtk-icon-effect: 	dim;
+}
+
+%selected_items {
+  background-color: $selected_bg;
+
+  @at-root %nobg_selected_items, & {
+    color: $selected_fg;
+  }
+}
+
+
+@import 'colors-public';
+@import 'shadow';
+@import 'drawing';
+@import 'widgets/buttons';
+@import 'widgets/checkbox_radiobutton';
+@import 'widgets/containers';
+@import 'widgets/entry_combobox';
+@import 'widgets/expander';
+@import 'widgets/headerbar';
+@import 'widgets/menus';
+@import 'widgets/notebook';
+@import 'widgets/popover';
+@import 'widgets/progress_level_bar';
+@import 'widgets/scale';
+@import 'widgets/scrollbar';
+@import 'widgets/separator';
+@import 'widgets/spinbutton';
+@import 'widgets/switch';
+@import 'widgets/toolbar';
+@import 'widgets/view';
+@import 'widgets/widget';
+
+@import 'apps/xfce';
+@import 'apps/nemo';
+@import 'apps/libhandy';
+
+
+decoration {
+    border-style: none;
+    border-radius: 0;
+	@include border(window);
+
+    /* this is used for the resize cursor area */
+    margin: 10px;
+}
+.popup decoration {
+    box-shadow: none;
+}
+.ssd {
+	decoration {
+		@include border(window);
+	}
+}
+.solid-csd decoration {
+     border: none;
+     border-radius: 0;
+     margin: 2px;
+     background-color: $titlebar-bg-start;
+     box-shadow: none; 
+}
+GtkTrayIcon{
+	decoration{
+		box-shadow:none;
+	}
+}
+#pathbarbox{
+	background-color:$control_bg;
+	color:$control_fg;
+}
