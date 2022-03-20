@@ -4,8 +4,8 @@
  */
  notebook {
      
-	> header {
-		background-color: $control_bg;
+    > header {
+        background-color: $control_bg;
         
         > frame {
             box-shadow: none;
@@ -117,55 +117,55 @@
             }
         }
         
-		&.top, &.bottom
-		{
-			> tabs > arrow.up
-			{
-				-gtk-icon-source: -gtk-icontheme("pan-end-symbolic");
-				&:last-child {
-					margin-left: 2px;
-				}
-			}
-			> tabs > arrow.down
-			{
-				-gtk-icon-source: -gtk-icontheme("pan-start-symbolic");
-				&:first-child {
-					margin-right: 2px;
-				}
-			}
-		}
-		&.left, &.right
-		{
-			> tabs > arrow.up
-			{
-				-gtk-icon-source: -gtk-icontheme("pan-down-symbolic");
-				&:last-child {
-					margin-top: 2px;
-				}
-			}
-			> tabs > arrow.down
-			{
-				-gtk-icon-source: -gtk-icontheme("pan-up-symbolic");
-				&:first-child {
-					margin-bottom: 2px;
-				}
-			}
-		}
-		
-	}
+        &.top, &.bottom
+        {
+            > tabs > arrow.up
+            {
+                -gtk-icon-source: -gtk-icontheme("pan-end-symbolic");
+                &:last-child {
+                    margin-left: 2px;
+                }
+            }
+            > tabs > arrow.down
+            {
+                -gtk-icon-source: -gtk-icontheme("pan-start-symbolic");
+                &:first-child {
+                    margin-right: 2px;
+                }
+            }
+        }
+        &.left, &.right
+        {
+            > tabs > arrow.up
+            {
+                -gtk-icon-source: -gtk-icontheme("pan-down-symbolic");
+                &:last-child {
+                    margin-top: 2px;
+                }
+            }
+            > tabs > arrow.down
+            {
+                -gtk-icon-source: -gtk-icontheme("pan-up-symbolic");
+                &:first-child {
+                    margin-bottom: 2px;
+                }
+            }
+        }
+        
+    }
 
-	> stack:not(:only-child) {
-		background-color: $control_bg;
-		border-radius: 0;
-		padding: 4px;
-		background-clip: border-box;
-		border:none;
-		box-shadow:		inset -1px -1px 0px 1px $shadow,
-						inset 0px 0px 0px 1px $highlight,
-						inset -1px -1px 0px 0px $control_fg;
+    > stack:not(:only-child) {
+        background-color: $control_bg;
+        border-radius: 0;
+        padding: 4px;
+        background-clip: border-box;
+        border:none;
+        box-shadow:		inset -1px -1px 0px 1px $shadow,
+                        inset 0px 0px 0px 1px $highlight,
+                        inset -1px -1px 0px 0px $control_fg;
 
-		
-	}
+        
+    }
 
 
 }

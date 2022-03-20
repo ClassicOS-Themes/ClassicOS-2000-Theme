@@ -1,26 +1,30 @@
 
-spinbutton {
-	color: $control_fg;
-	@include border(textbox);
-	padding: 2px;
+spinbutton, spinbutton.vertical {
+    color: $control_fg;
+    @include border(textbox);
+    padding: 2px;
 
-	entry {
-		box-shadow: none;
-	}
-	button {
-		@include combobox_button(normal);
-		&:focus {
-			@include combobox_button(normal);
-		}
-		&:active {
-			@include combobox_button(pressed);
-		}
-	}
+    entry {
+        box-shadow: none;
+    }
+    >button.down,
+    >button.up {
+        @include button_flat(normal);
+        @include combobox_button(normal);
+        &:focus {
+            @include button_flat(default);
+            @include combobox_button(normal);
+        }
+        &:active {
+            @include button_flat(pressed);
+            @include combobox_button(pressed);
+        }
+    }
 
-	&:disabled {
-		@include border(textbox);
-		entry {
-			box-shadow: none;
-		}
-	}
+    &:disabled {
+        @include border(textbox);
+        entry {
+            box-shadow: none;
+        }
+    }
 }

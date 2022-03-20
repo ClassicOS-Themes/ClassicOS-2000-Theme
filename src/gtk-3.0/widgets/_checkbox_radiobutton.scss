@@ -2,45 +2,55 @@ check,
 radio,
 check:disabled,
 radio:disabled {
-	border-style: none;
-	background-color: $document_bg;
-	// @include border(textbox);
+    border-style: none;
+    background-color: $white;
+    // @include border(textbox);
 }
 
 %check,
 check {
-	box-shadow: $check_border;
-	&:disabled {
-		background-color: $control_bg;
-	}
+    background-color: $white;
+    box-shadow: $check_border;
+    &:disabled {
+    }
 
-	&:checked {
-		-gtk-icon-source: image(url("assets/check-symbolic.svg"));
-	}
+    &:checked {
+        background-color: $white;
+        -gtk-icon-source: image(url("assets/check-symbolic.svg"));
+    }
 
-	&:indeterminate {
-		-gtk-icon-source: image(url("assets/indeterminate-symbolic.svg"));
-	}
-	&:checked:disabled{
-		-gtk-icon-source: image(url("assets/check-symbolic-disabled.svg"));
-	}
+    &:indeterminate {
+        background-color: $white;
+        -gtk-icon-source: image(url("assets/indeterminate-symbolic.svg"));
+    }
+    &:checked:disabled{
+        background-color: $control_bg;
+        -gtk-icon-source: image(url("assets/check-symbolic-disabled.svg"));
+    }
 }
 
 %radio,
 radio {
-	border-radius: 100%;
-	box-shadow: $radio_border;
-	&:disabled {
-		background-color: $control_bg;
-	}
-	&:checked {
-		-gtk-icon-source: image(url("assets/bullet-symbolic.svg"));
-	}
+    border-radius: 100%;
+    box-shadow: $radio_border;
+    background-color: $white;
+    &:disabled {
+        background-color: $control_bg;
+    }
+    &:checked {
+        -gtk-icon-source: image(url("assets/bullet-symbolic.svg"));
+        background-color: $white;
+    }
 
-	&:indeterminate {
-		-gtk-icon-source: image(url("assets/bullet-symbolic-indeterminate.svg"));
-	}
-	&:checked:disabled{
-		-gtk-icon-source: image(url("assets/bullet-symbolic-disabled.svg"));
-	}
+    &:selected {
+        background-color: $white;
+    }
+    &:indeterminate {
+        -gtk-icon-source: image(url("assets/bullet-symbolic-indeterminate.svg"));
+        background-color: $white;
+    }
+    &:checked:disabled{
+        -gtk-icon-source: image(url("assets/bullet-symbolic-disabled.svg"));
+        background-color: $control_bg;
+    }
 }

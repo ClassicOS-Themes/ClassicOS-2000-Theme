@@ -25,8 +25,19 @@
 }
 .view,
 textview {
+
   text {
     @extend %view;
     selection { &:focus, & { @extend %selected_items; }}
+  }
+}
+treeview>header>button{
+
+  padding: 			2px 6px;
+  &:active{
+    padding-top: 		3px;
+    padding-bottom:		1px;
+    padding-left:		7px;
+    padding-right:      5px;
   }
 }

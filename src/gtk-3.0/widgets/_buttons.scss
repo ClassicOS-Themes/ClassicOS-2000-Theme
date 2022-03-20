@@ -1,39 +1,43 @@
 
 button {
-	border: 0px;
-	border-radius: 0px;
-	color: $control_fg;
-	@include button_3d(normal);
+    border: 0px;
+    border-radius: 0px;
+    color: $control_fg;
+    @include button_3d(normal);
 
-	&:active,
-	&:active:focus {
-		@include button_3d(pressed);
-	}
-	&:checked,
-	&:checked:focus {
-		@include button_3d(checked);
-	}
-	&:focus {
-		@include button_3d(default);
-	}
-	&:disabled {
-		color: $disabled_fg;
-		text-shadow: 1px 1px $highlight;
-	}
-	&.flat {
-		@include button_flat(normal);
-		&:focus {
-			@include button_flat(default);
-		}
-		&:hover {
-			@include button_flat(hover);
-		}
-		&:active {
-			@include button_flat(pressed);
-		}
-		&:checked {
-			@include button_flat(checked);
-		}
-	}
+    &:active,
+    &:active:focus {
+        @include button_3d(pressed);
+    }
+    &:checked,
+    &:checked:focus {
+        @include button_3d(checked);
+    }
+    &:focus {
+        @include button_3d(default);
+    }
+    &:disabled{
+        color: $disabled_fg;
+        text-shadow: 1px 1px $highlight;
+        image{
+            -gtk-icon-effect: dim;
+        }
+    }
+    
+    &.flat {
+        @include button_flat(normal);
+        &:focus {
+            @include button_flat(default);
+        }
+        &:hover {
+            @include button_flat(hover);
+        }
+        &:active {
+            @include button_flat(pressed);
+        }
+        &:checked {
+            @include button_flat(checked);
+        }
+    }
 }
 

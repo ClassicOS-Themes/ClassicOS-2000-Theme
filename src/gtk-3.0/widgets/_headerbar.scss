@@ -2,54 +2,54 @@
 /* Headerbar */
 
 headerbar{
-	.title,
-	.subtitle {
-		color: $titlebar-fg-color;
-	}
-	.title:backdrop,
-	.subtitle:backdrop {
-		color: $titlebar-inactive-fg;
-	}
-	
+    .title,
+    .subtitle {
+        color: $titlebar-fg-color;
+    }
+    .title:backdrop,
+    .subtitle:backdrop {
+        color: $titlebar-inactive-fg;
+    }
+    
     button, button:hover, button:focus, button:checked{
-		padding-top:1px;
-		padding-bottom:1px;
-		background-color: $control_bg;
+        padding-top:1px;
+        padding-bottom:1px;
+        background-color: $control_bg;
     }
     button:not(.flat):active,button:not(.flat):active:hover{
         padding-top:2px;
-		padding-bottom:0px;
+        padding-bottom:0px;
     }
     toolitem entry{
-		padding-top:1px;
-		padding-bottom:1px;
+        padding-top:1px;
+        padding-bottom:1px;
     }
     &:not(.titlebar) {
-		padding: 2px;
-		background-color: $control_bg;
-		background-image: none;
-		color: $control-fg;
-	}
+        padding: 2px;
+        background-color: $control_bg;
+        background-image: none;
+        color: $control-fg;
+    }
 
-	.title {
-		font-weight: bold;
-		padding: 0 12px;
-	}
-	.flat{
-	
-		
-		background-color:transparent;
-	}
-	.subtitle {
-		font-size: smaller;
-		padding: 0 12px;
-	}
+    .title {
+        font-weight: bold;
+        padding: 0 12px;
+    }
+    .flat{
+    
+        
+        background-color:transparent;
+    }
+    .subtitle {
+        font-size: smaller;
+        padding: 0 12px;
+    }
 
-	entry:active,
-	entry selection:focus {
-		border-width: 1px;
-		border-color: shade($selected_bg, 0.6);
-	}
+    entry:active,
+    entry selection:focus {
+        border-width: 1px;
+        border-color: shade($selected_bg, 0.6);
+    }
 
 
 }
@@ -57,62 +57,56 @@ headerbar{
 
 .titlebar 
 {
-	border-radius: 0;	
-    padding:2px;
+    border-radius: 0;	
+    padding:1px;
     background-image: linear-gradient(to right, $titlebar-bg-start, $titlebar-bg-end);
     background-color: $titlebar-bg-start;
     color: $titlebar-fg-color;
+    &backdrop{
 
+        color: $titlebar-inactive-fg;
+        background-image: linear-gradient(to right, $titlebar-inactive-start, $titlebar-inactive-end);
+        background-color: $titlebar-inactive-start;
+    }
 
     headerbar {
-		margin-top: -2px;
-		margin-bottom:-2px;
-		background-color: transparent;
+        margin-top: -2px;
+        margin-bottom:-2px;
+        background-color: transparent;
     }
     .title {
-		font-weight: bold;
-	}
-	.titlebutton {
-		padding: 0
-	
+        font-weight: bold;
     }
-    .minimize {
-		margin-right:-3px;
-    		margin-top:-1px;
-		margin-bottom: -1px;
+    .titlebutton {
+        padding: 0;
+    
+        &.minimize {
+            margin-right:-3px;
+            margin-top:-1px;
+            margin-bottom: -1px;
+            &, &>image{
+                -gtk-icon-source: image(url(if($variant == 'light',"assets/minimize.svg","assets/minimize-dark.svg")));
+            }
+        }
+        &.maximize {
+            margin-left:-3px;
+            margin-top:-1px;
+            margin-bottom: -1px;
+            &, &>image{
+                -gtk-icon-source: image(url(if($variant == 'light',"assets/maximize.svg","assets/maximize-dark.svg")));
+            }
+            
+        }
+        &.close{
+            margin-top:-1px;
+            margin-bottom: -1px;
+            margin-left:-4px;
+            &, &>image{
+                -gtk-icon-source: image(url(if($variant == 'light',"assets/close.svg","assets/close-dark.svg")));
+            }
+            
+        }
     }
-    .maximize {
-		margin-left:-3px;
-    		margin-top:-1px;
-		margin-bottom: -1px;
-    }
-    .close{
-    		margin-top:-1px;
-		margin-bottom: -1px;
-		margin-left:-4px;
-    }
-    .icon{
-		margin-top:-2px;
-		margin-bottom:-2px
-    }
-	.titlebutton.minimize {
-		margin-right:-3px;
-		margin-top:-1px;
-		margin-bottom: -1px;
-	}
-		
-	.titlebutton.maximize {
-		margin-left:-3px;
-		margin-top:-1px;
-		margin-bottom: -1px;
-	}
-
-	.titlebutton.close{
-		margin-top:-1px;
-		margin-bottom: -1px;
-		margin-left:-4px;
-	}
-
 }
 
 headerbar 

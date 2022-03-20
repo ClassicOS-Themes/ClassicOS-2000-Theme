@@ -1,7 +1,8 @@
 switch {
 	padding: 2px;
 	@include border(fixed);
-	color: $control_bg;
+	color: $control_fg;
+    background-color: darken($control_bg,5%);
     &:checked {
         background-color: $selected_bg;
         color: $selected_bg;

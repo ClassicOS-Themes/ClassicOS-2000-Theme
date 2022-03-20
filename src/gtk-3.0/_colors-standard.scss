@@ -5,30 +5,30 @@ $red: #f00; // Always gonna be blue
 $green: #0f0; // Always gonna be blue
 $blue: #00f; // Always gonna be blue
 
-$control_bg:   if($variant == 'light',#d4d0c8,#222222);
+$control_bg:   if($variant == 'light',#d4d0c8,#262626);
 $control_fg:   if($variant == 'light',#000000,#ffffff);
-$selected_bg:  if($variant == 'light',#000082,#6666ee);
-$selected_fg:  if($variant == 'light',#ffffff,#000000);
+$selected_bg:  if($variant == 'light',#000082,#000062);
+$selected_fg:  if($variant == 'light',#ffffff,#ffffff);
 $document_bg:  if($variant == 'light',#ffffff,#000000);
 $document_fg:  if($variant == 'light',#000000,#ffffff);
 $disabled_fg:  if($variant == 'light',#848484,#777777);
-$tooltip_bg:   if($variant == 'light',#FFFFBF,#777777);
-$tooltip_fg:   if($variant == 'light',#000000,#dedede);
+$tooltip_bg:   if($variant == 'light',#FFFFBF,#777755);
+$tooltip_fg:   if($variant == 'light',#000000,#ffffde);
 
 // 3d colors
 $shadow:       if($variant == 'light',#808080,#777777);
-$highlight:    if($variant == 'light',#FFFFFF,#777777);
-$dim_highlight:if($variant == 'light',#DFDFDF,#777777); 
+$highlight:    if($variant == 'light',#FFFFFF,#cccccc);
+$dim_highlight:if($variant == 'light',#DFDFDF,#aaaaaa); 
 
 //Window Frame
-$titlebar-bg:       if($variant == 'light',#000080,#777777);
+$titlebar-bg:       if($variant == 'light',#000080,darken(#000080,20%));
 $titlebar-bg-start:       $titlebar-bg;
-$titlebar-bg-end:         if($variant == 'light',#A6CAF0,#777777); 
-$titlebar-fg-color:       if($variant == 'light',#FFFFFF,#777777); 
+$titlebar-bg-end:         if($variant == 'light',#A6CAF0,darken(#A6CAF0, 40%)); 
+$titlebar-fg-color:       if($variant == 'light',#FFFFFF,#FFFFFF); 
 
-$titlebar-inactive-start: if($variant == 'light',#808080,#777777); 
-$titlebar-inactive-end:   if($variant == 'light',#C0C0C0,#777777); 
-$titlebar-inactive-fg:    if($variant == 'light',#D4D0C8,#777777); 
+$titlebar-inactive-start: if($variant == 'light',#808080,#808080); 
+$titlebar-inactive-end:   if($variant == 'light',#C0C0C0,#C0C0C0); 
+$titlebar-inactive-fg:    if($variant == 'light',#D4D0C8,#D4D0C8); 
 
 $warning-bg: #999900;
 $warning-fg: #ffffcc;

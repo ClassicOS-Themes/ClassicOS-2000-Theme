@@ -110,3 +110,18 @@
 
 	-gtk-icon-transform: scale(0.6666666666) ;
 }
+
+.thunar {
+	paned>separator{
+		margin-left:-2px;
+	}
+	paned>grid scrolledwindow.frame.standard-view{
+		box-shadow: $fixed3d_border;
+		>widget.view, >treeview{
+			padding: 2px;
+			header{
+				margin:-2px;
+			}
+		}
+	}
+}

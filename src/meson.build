@@ -13,6 +13,7 @@ scss_files = files([
     'gtk-3.0/widgets/_entry_combobox.scss',
     'gtk-3.0/widgets/_expander.scss',
     'gtk-3.0/widgets/_headerbar.scss',
+    'gtk-3.0/widgets/_list.scss',
     'gtk-3.0/widgets/_menus.scss',
     'gtk-3.0/widgets/_notebook.scss',
     'gtk-3.0/widgets/_popover.scss',

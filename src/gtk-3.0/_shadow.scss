@@ -1,114 +1,114 @@
-$fixed3d_border:		inset 0px 0px 0px 2px $control_fg,
-						inset -1px -1px 0px 1px $highlight,
-						inset 0px 0px 0px 1px $shadow,
-						inset -1px -1px 0px 0px $highlight;
-						
-$textbox_border:		inset 0px 0px 0px 2px $control_fg,
-						inset -1px -1px 0px 1px $control_bg,
-						inset 0px 0px 0px 1px $shadow,
-						inset -1px -1px 0px 0px $highlight;
-												
-$check_border:		inset 0px 0px 0px 2px $control_fg,
-					inset -1px -1px 0px 1px $control_bg,
-					inset 0px 0px 0px 1px $shadow,
-					inset -1px -1px 0px 0px $highlight;
+$fixed3d_border:		    inset 0px 0px 0px 2px $control_fg,
+                            inset -1px -1px 0px 1px $highlight,
+                            inset 0px 0px 0px 1px $shadow,
+                            inset -1px -1px 0px 0px $highlight;
+                            
+$textbox_border:		    inset 0px 0px 0px 2px $control_fg,
+                            inset -1px -1px 0px 1px $control_bg,
+                            inset 0px 0px 0px 1px $shadow,
+                            inset -1px -1px 0px 0px $highlight;
+                                                    
+$check_border:		        inset 0px 0px 0px 2px $control_fg,
+                            inset -1px -1px 0px 1px $control_bg,
+                            inset 0px 0px 0px 1px $shadow,
+                            inset -1px -1px 0px 0px $highlight;
 $radio_border:		    
-						inset 0px 0px 0px 3px $control_fg,
-						inset -2px 0px 0px 1px $control_bg,
-						inset 0px -2px 0px 1px $control_bg,
-						inset -1px -2px 0px 1px $control_bg,
-						inset 0px 0px 0px 2px $shadow,
-						inset -1px -1px 0px 1px $highlight,
-						inset 0px -1px 0px 1px $highlight,
-						inset -1px 0px 0px 1px $highlight,
-						inset 0px 0px 0px 1.05px $control_bg;				
-$progressbar_border: 	0px -1px 0px 0px $shadow,
-						-1px 0px 0px 0px $shadow,
-						-1px -1px 0px 0px $shadow,
-						 0px 0px 0px 1px $highlight;
-$menu_border: 			inset 0px 0px 0px 2px $highlight,
-						inset -1px -1px 0px 1px $shadow,
-						inset 0px 0px 0px 1px $control_bg,
-						inset -1px -1px 0px 0px $control_fg;
-						
-$slim_border: 			inset 0px 0px 0px 2px $shadow,
-						inset 2px 2px 0px 0px $highlight,
-						inset -2px -2px 0px 0px $shadow,
-						inset -1px -1px 0px 0px $highlight,
-						inset 0px -1px 0px 0px $highlight,
-						inset -1px 0px 0px 0px $highlight,
-						inset 1px 1px 0px 0px $shadow,
-						inset 0px 1px 0px 0px $shadow,
-						inset 1px 0px 0px 0px $shadow,
-						inset 0px -1px 0px 0px $highlight,
-						inset -1px 0px 0px 0px $highlight;
-						
-$window_border:			0px 0px 0px 3px $control_fg,
-						-1px -1px 0px 2px $control_bg,
-						-1px 0px 0px 2px $control_bg,
-						0px -1px 0px 2px $control_bg,
-						0px 0px 0px 2px $shadow,
-						-1px -1px 0px 1px $highlight,
-						-1px 0px 0px 1px $highlight,
-						0px -1px 0px 1px $highlight,
-						0px 0px 0px 1px $control_bg;
-$button_border_normal:  inset -1px -1px 0px 1px $shadow,
-						inset 0px 0px 0px 1px $highlight,
-						inset -1px -1px 0px 0px $control_fg;
-$button_border_pressed:	inset 0px 0px 0px 2px $shadow,
-						inset 0px 0px 0px 1px $control_fg;
-$button_border_default:	inset -1px -1px 0px 2px $shadow,
-						inset 0px 0px 0px 2px $highlight,
-						inset 0px 0px 0px 1px $control_fg,
-						inset -1px -1px 0px 1px $control_fg;
-$button_border_checked:	inset 0px 0px 0px 2px $shadow,
-						inset -1px -1px 0px 1px $dim_highlight,
-						inset 0px 0px 0px 1px $control_fg,
-						inset -1px -1px 0px 0px $highlight;
-$flatbt_border_normal:  none;
-$flatbt_border_hover: 	inset 0px 0px 0px 1px $highlight,
-						inset -1px -1px 0px 0px $shadow;
-$flatbt_border_pressed:	inset 0px 0px 0px 1px $shadow,
-						inset -1px -1px 0px 0px $highlight;
+                            inset 0px 0px 0px 3px $control_fg,
+                            inset -2px 0px 0px 1px $control_bg,
+                            inset 0px -2px 0px 1px $control_bg,
+                            inset -1px -2px 0px 1px $control_bg,
+                            inset 0px 0px 0px 2px $shadow,
+                            inset -1px -1px 0px 1px $highlight,
+                            inset 0px -1px 0px 1px $highlight,
+                            inset -1px 0px 0px 1px $highlight,
+                            inset 0px 0px 0px 1.05px $control_bg;				
+$progressbar_border: 	    0px -1px 0px 0px $shadow,
+                            -1px 0px 0px 0px $shadow,
+                            -1px -1px 0px 0px $shadow,
+                             0px 0px 0px 1px $highlight;
+$menu_border: 			    inset 0px 0px 0px 2px $highlight,
+                            inset -1px -1px 0px 1px $shadow,
+                            inset 0px 0px 0px 1px $control_bg,
+                            inset -1px -1px 0px 0px $control_fg;
+
+$slim_border: 			    inset 0px 0px 0px 2px $shadow,
+                            inset 2px 2px 0px 0px $highlight,
+                            inset -2px -2px 0px 0px $shadow,
+                            inset -1px -1px 0px 0px $highlight,
+                            inset 0px -1px 0px 0px $highlight,
+                            inset -1px 0px 0px 0px $highlight,
+                            inset 1px 1px 0px 0px $shadow,
+                            inset 0px 1px 0px 0px $shadow,
+                            inset 1px 0px 0px 0px $shadow,
+                            inset 0px -1px 0px 0px $highlight,
+                            inset -1px 0px 0px 0px $highlight;
+
+$window_border:			    0px 0px 0px 3px $control_fg,
+                            -1px -1px 0px 2px $control_bg,
+                            -1px 0px 0px 2px $control_bg,
+                            0px -1px 0px 2px $control_bg,
+                            0px 0px 0px 2px $shadow,
+                            -1px -1px 0px 1px $highlight,
+                            -1px 0px 0px 1px $highlight,
+                            0px -1px 0px 1px $highlight,
+                            0px 0px 0px 1px $control_bg;
+$button_border_normal:      inset -1px -1px 0px 1px $shadow,
+                            inset 0px 0px 0px 1px $highlight,
+                            inset -1px -1px 0px 0px $control_fg;
+$button_border_pressed:	    inset 0px 0px 0px 2px $shadow,
+                            inset 0px 0px 0px 1px $control_fg;
+$button_border_default:	    inset -1px -1px 0px 2px $shadow,
+                            inset 0px 0px 0px 2px $highlight,
+                            inset 0px 0px 0px 1px $control_fg,
+                            inset -1px -1px 0px 1px $control_fg;
+$button_border_checked:	    inset 0px 0px 0px 2px $shadow,
+                            inset -1px -1px 0px 1px $dim_highlight,
+                            inset 0px 0px 0px 1px $control_fg,
+                            inset -1px -1px 0px 0px $highlight;
+$flatbt_border_normal:      none;
+$flatbt_border_hover: 	    inset 0px 0px 0px 1px $highlight,
+                            inset -1px -1px 0px 0px $shadow;
+$flatbt_border_pressed:	    inset 0px 0px 0px 1px $shadow,
+                            inset -1px -1px 0px 0px $highlight;
 
 
-$separator_horiz: 		inset 0px -1px 0px 0px $highlight,
-						inset 0px 1px 0px 0px $shadow;
-$separator_verti: 		inset -1px 0px 0px 0px $highlight,
-						inset 1px 0px 0px 0px $shadow;
+$separator_horiz: 		    inset 0px -1px 0px 0px $highlight,
+                            inset 0px 1px 0px 0px $shadow;
+$separator_verti: 		    inset -1px 0px 0px 0px $highlight,
+                            inset 1px 0px 0px 0px $shadow;
 /* Notebook tab borders */
-$tab-top-active-border:			inset -2px 0px 0px 0px $shadow,
-							inset 1px 1px 0px 0px $highlight,
-							inset -1px 0px 0px 0px $control_fg;
+$tab-top-active-border:		inset -2px 0px 0px 0px $shadow,
+                            inset 1px 1px 0px 0px $highlight,
+                            inset -1px 0px 0px 0px $control_fg;
 $tab-top-border:			inset -2px 0px 0px 0px $shadow,
-							inset 1px 1px 0px 0px $highlight,
-							inset -1px 0px 0px 0px $control_fg,
-							inset 0px -1px 0px 0px $highlight;
-							
+                            inset 1px 1px 0px 0px $highlight,
+                            inset -1px 0px 0px 0px $control_fg,
+                            inset 0px -1px 0px 0px $highlight;
+                            
 $tab-btm-active-border:		inset -2px -2px 0px 0px $shadow,
-							inset -1px -1px 0px 0px $control_fg,
-							inset 1px 0px 0px 0px $highlight;
-							
+                            inset -1px -1px 0px 0px $control_fg,
+                            inset 1px 0px 0px 0px $highlight;
+                            
 $tab-btm-border:			inset -2px -2px 0px 0px $shadow,
-							inset -1px -1px 0px 0px $control_fg,
-							inset 1px 0px 0px 0px $highlight,
-							inset 0 2px 0px 0px $control_fg,
-							inset 0px 1px 0px 0px $shadow;	
+                            inset -1px -1px 0px 0px $control_fg,
+                            inset 1px 0px 0px 0px $highlight,
+                            inset 0 2px 0px 0px $control_fg,
+                            inset 0px 1px 0px 0px $shadow;	
 $tab-left-active-border:	inset 0px -2px 0px 0px $shadow,
-							inset 0px -1px 0px 0px $control_fg,
-							inset 1px 1px 0px 0px $highlight;
-							
+                            inset 0px -1px 0px 0px $control_fg,
+                            inset 1px 1px 0px 0px $highlight;
+                            
 $tab-left-border:			inset 0px -2px 0px 0px $shadow,
-							inset 1px 1px 0px 0px $highlight,
-							inset 0px -1px 0px 0px $control_fg,
-							inset -1px 0px 0px 0px $highlight;	
-											
+                            inset 1px 1px 0px 0px $highlight,
+                            inset 0px -1px 0px 0px $control_fg,
+                            inset -1px 0px 0px 0px $highlight;	
+                                            
 $tab-right-active-border:	inset -2px -2px 0px 0px $shadow,
-							inset -1px -1px 0px 0px $control_fg,
-							inset 0px 1px 0px 0px $highlight;
-							
+                            inset -1px -1px 0px 0px $control_fg,
+                            inset 0px 1px 0px 0px $highlight;
+                            
 $tab-right-border:			inset -2px -2px 0px 0px $shadow,
-							inset 0px 1px 0px 0px $highlight,
-							inset -1px -1px 0px 0px $control_fg,
-							inset 2px 0px 0px 0px $control_fg,
-							inset 1px 0px 0px 0px $shadow;
+                            inset 0px 1px 0px 0px $highlight,
+                            inset -1px -1px 0px 0px $control_fg,
+                            inset 2px 0px 0px 0px $control_fg,
+                            inset 1px 0px 0px 0px $shadow;

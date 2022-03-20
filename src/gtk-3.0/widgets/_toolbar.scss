@@ -2,50 +2,54 @@
  * toolbar *
  ***********/
 toolbar, .toolbar {
-	button {
-		@include button_flat(normal);
-	}
-	button:focus{
-		@include button_flat(default);
-	}
-	button:hover{
-		@include button_flat(hover);
-	}
+    background-color: $control_bg;
+    button {
+        @include button_flat(normal);
+        &:focus{
+            @include button_flat(default);
+        }
+        &:hover{
+            @include button_flat(hover);
+        }
+    
+        &:active{
+            @include button_flat(pressed);
+        }
+        &:checked{
+            @include button_flat(pressed);
+            background-color: shade($control_bg,1.1);
+        }
+    }
 
-	button:active{@include button_flat(pressed);}
-	button:checked{
-		@include button_flat(pressed);
-		background-color: shade($control_bg,1.1);
-	}
-	
+    
 }
 
 toolbar {
-	@include border(toolbar);
-	padding: 4px;
-	menubar {
-		-GtkToolbar-button-relief: normal;
-	}
-	&:disabled {
-		color: $disabled_fg;
-	}
+    @include border(toolbar);
+    padding: 4px;
+    menubar {
+        -GtkToolbar-button-relief: normal;
+    }
+    &:disabled {
+        color: $disabled_fg;
+    }
 }
 
 
 .primary-toolbar
 {
-	toolbar{
-		-GtkWidget-window-dragging: true;
-		padding: 4px;
-	}
-	combobox,
-	button,button:disabled,button:focus,button:hover,button:checked{
-		padding: 6px 8px;
-	}
-	button:active{
-		padding-left: 9px;
-		padding-right: 7px;
-		padding-top:7px;
-		padding-bottom:5px;
-	}
+    toolbar{
+        -GtkWidget-window-dragging: true;
+        padding: 4px;
+    }
+    combobox,
+    button,button:disabled,button:focus,button:hover,button:checked{
+        padding: 6px 8px;
+    }
+    button:active{
+        padding-left: 9px;
+        padding-right: 7px;
+        padding-top:7px;
+        padding-bottom:5px;
+    }
 }
