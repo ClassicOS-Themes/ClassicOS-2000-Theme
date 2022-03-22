@@ -7,8 +7,8 @@
 }
 
 .xfce4-panel.background {
-    background-color: $control_bg;
-    color: $control_fg;
+    background-color: $C3DFACE;
+    color: $BTNTEXT;
     font-weight: normal;
     padding: 2px;
     button {
@@ -18,7 +18,7 @@
         border-color: transparent;
         box-shadow: none;
         padding: 0 1px;
-        color: $control-fg;
+        color: $BTNTEXT;
 
     }
     menu {
@@ -43,9 +43,9 @@
 	/* Header of whisker menu */
 	.title-area{
 		margin: -3px; // to fix spacing
-		background-color: $titlebar-bg-start;
-		color: $titlebar-fg-color;
-		background-image: linear-gradient(to right, $titlebar-bg-start, $titlebar-bg-end);
+		background-color: $ACTIVECAPTION;
+		color: $CAPTIONTEXT;
+		background-image: linear-gradient(to right, $ACTIVECAPTION, $GRADIENTACTIVECAPTION);
 		label{
 		
 			font-weight: bold;
@@ -122,6 +122,28 @@
 			header{
 				margin:-2px;
 			}
+		}
+	}
+}
+
+notebook#xfce4-terminal-notebook 
+{
+	>header{
+		tabs tab button
+		{
+		margin-top:-1px;
+		margin-bottom:-1px;
+		}
+
+	}
+	>stack>{
+			overlay>box{
+
+			padding-left:2px;
+			padding-right:2px;
+			padding-top:2px;
+			padding-bottom:2px;
+			box-shadow: $fixed3d_border;
 		}
 	}
 }

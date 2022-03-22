@@ -1,18 +1,18 @@
 switch {
 	padding: 2px;
 	@include border(fixed);
-	color: $control_fg;
-    background-color: darken($control_bg,5%);
+	color: $BTNTEXT;
+    background-color: darken($C3DFACE,5%);
     &:checked {
-        background-color: $selected_bg;
-        color: $selected_bg;
+        background-color: $HIGHLIGHT;
+        color: $HIGHLIGHT;
     }
     &:disabled {
-        background-color: $control_bg;
-        color: $disabled_fg;
+        background-color: $C3DFACE;
+        color: $GRAYTEXT;
         slider {
             box-shadow: none;
-            border-color: $disabled_fg;
+            border-color: $GRAYTEXT;
         }
     }
     slider {
@@ -21,12 +21,12 @@ switch {
         border-width: 1px;
         border-radius: 0px;
         border-style: solid;
-        border-color: $control-fg;
+        border-color: $BTNTEXT;
         border-top-color: #f1f1f1;
         border-left-color: #f1f1f1;
-        background-color: $control_bg;
-        color: $control-fg;
-        box-shadow: inset -1px 0 shade($control_bg, 0.65), inset 0 -1px shade($control_bg, 0.65), inset 1px 0 #f1f1f1,
+        background-color: $C3DFACE;
+        color: $BTNTEXT;
+        box-shadow: inset -1px 0 shade($C3DFACE, 0.65), inset 0 -1px shade($C3DFACE, 0.65), inset 1px 0 #f1f1f1,
             inset 0 1px #f1f1f1;
     }
 }

@@ -1,6 +1,6 @@
 
 spinbutton, spinbutton.vertical {
-    color: $control_fg;
+    color: $BTNTEXT;
     @include border(textbox);
     padding: 2px;
 

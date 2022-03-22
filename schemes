@@ -1,0 +1,67 @@
+
+# A Bash array of all color schemes
+# Each color scheme is a group of 3 elements.
+# first being colorscheme import to use in light mode
+# second being the import for dark mode
+# and third is the last part of the theme name
+# (import root is src/gtk-3.0/colorschemes)
+
+schemes=( \
+brick brick "2000-Brick" \
+classic standard_dark "2000-Classic" \
+desert desert "2000-Desert" \
+eggplant eggplant "2000-Eggplant" \
+high_contrast_1 high_contrast_1 "2000-High-Contrast-1" \
+high_contrast_2 high_contrast_2 "2000-High-Contrast-2" \
+high_contrast_black high_contrast_black "2000-High-Contrast-Black" \
+high_contrast_white high_contrast_white "2000-High-Contrast-White" \
+lilac lilac "2000-Lilac" \
+maple maple "2000-Maple" \
+marine marine "2000-Marine" \
+plum plum "2000-Plum" \
+pumpkin pumpkin "2000-Pumpkin" \
+rainy_day rainy_day "2000-Rainy-Day" \
+red_white_and_blue red_white_and_blue "2000-Red-White-and-Blue" \
+rose rose "2000-Rose" \
+slate slate_dark "2000-Slate" \
+spruce spruce_dark "2000-Spruce" \
+standard standard_dark "2000-Standard" \
+storm storm_dark "2000-Storm" \
+teal teal "2000-Teal" \
+wheat wheat "2000-Wheat" \
+98/architecture 98/architecture "98-Architecture" \
+98/baseball 98/baseball "98-Baseball" \
+98/cartoon_society 98/cartoon_society "98-Cartoon-Society" \
+98/cathy 98/cathy "98-Cathy" \
+98/cityscape 98/cityscape "98-Cityscape" \
+98/clouds_256 98/clouds_256 "98-Clouds" \
+98/corb 98/corb "98-Corb" \
+98/dangerous_creatures 98/dangerous_creatures "98-Dangerous-Creatures" \
+98/default 98/dark_mode_blue "98" \
+98/doonesbury 98/doonesbury "98-Doonesbury" \
+98/falling_leaves 98/falling_leaves "98-Falling-Leaves" \
+98/fashion 98/fashion "98-Fashion" \
+98/foxtrot 98/foxtrot "98-Foxtrot" \
+98/gremlin_kitty 98/gremlin_kitty "98-Gremlin-Kitty" \
+98/geometry 98/geometry "98-Geometry" \
+98/horror_channel 98/horror_channel "98-Horror-Channel" \
+98/inside_your_computer 98/inside_your_computer "98-Inside-Your-Computer" \
+98/jazz 98/jazz "98-Jazz" \
+98/jungle 98/jungle "98-Jungle" \
+98/leo_da_vinci 98/leo_da_vinci "98-Leo-Da-Vinci" \
+98/more 98/more "98-More" \
+98/mystery 98/mystery "98-Mystery" \
+98/nature 98/nature "98-Nature" \
+98/photodisc 98/photodisc "98-Photodisc" \
+98/rainbow_high 98/rainbow_high "98-Rainbow" \
+98/rock_n_roll 98/rock_n_roll "98-Rock-n-Roll" \
+98/science_fiction 98/science_fiction "98-Science-Fiction" \
+98/science 98/science "98-Science" \
+98/space 98/space "98-Space" \
+98/sports 98/sports "98-Sports" \
+98/the_60s_usa 98/the_60s_usa "98-The-60s-USA" \
+98/the_golden_era 98/the_golden_era "98-The-Golden-Era" \
+98/travel 98/travel "98-Travel" \
+98/underwater 98/underwater "98-Underwater" \
+98/world_traveler 98/world_traveler "98-World-Traveler" \
+)

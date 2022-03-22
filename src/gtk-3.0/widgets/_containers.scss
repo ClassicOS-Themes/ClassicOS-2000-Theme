@@ -24,8 +24,8 @@ frame.border-ridge,frame.border-groove
 frame{
 
     &.app-notification{
-        background-color:$tooltip_bg;
-        color:$tooltip_fg;
+        background-color:$INFOBK;
+        color:$INFOTEXT;
         border{
             padding:5px;
             border:1px solid #555;

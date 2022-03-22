@@ -1,8 +1,8 @@
 entry {
     @include border(textbox);
     padding: 4px 3px;
-    background-color: $document_bg;
-    color: $document_fg;
+    background-color: $WINDOW;
+    color: $WINDOWTEXT;
     &:selected,
     &:selected:focus,
     selection,

@@ -2,7 +2,7 @@
 button {
     border: 0px;
     border-radius: 0px;
-    color: $control_fg;
+    color: $BTNTEXT;
     @include button_3d(normal);
 
     &:active,
@@ -17,8 +17,8 @@ button {
         @include button_3d(default);
     }
     &:disabled{
-        color: $disabled_fg;
-        text-shadow: 1px 1px $highlight;
+        color: $GRAYTEXT;
+        text-shadow: 1px 1px $C3DHIGHLIGHT;
         image{
             -gtk-icon-effect: dim;
         }

@@ -5,15 +5,15 @@ menu,
 .menu {
     margin: 4px; /* avoid minify of menu */
     padding: 3px;
-    background-color: $control_bg;
-    color: $control_fg;
+    background-color: $C3DFACE;
+    color: $BTNTEXT;
     @include border(menu);
     &:selected {
-        color: $selected_fg;
-        background-color: $selected_bg;
+        color: $HIGHLIGHTTEXT;
+        background-color: $HIGHLIGHT;
     }
     button {
-        background-color: $control_bg;
+        background-color: $C3DFACE;
     }
     > arrow {
         &.top{
@@ -35,16 +35,16 @@ menu>menuitem{
     border: none;
     background-color: transparent;
     background-image: none;
-    color: $control_fg;
+    color: $BTNTEXT;
     &:hover,
     &:active {
-        background-color: $selected_bg;
+        background-color: $HIGHLIGHT;
     }
     &:hover,
     &:active,
     *:active,
     *:hover {
-        color: $selected_fg;
+        color: $HIGHLIGHTTEXT;
     }
     &:disabled {
         @include disabled;

@@ -1,6 +1,6 @@
 list {
-    background-color: $tooltip_bg;
-    color: $tooltip_fg;
+    background-color: $INFOBK;
+    color: $INFOTEXT;
 
     row {
         @include button_flat(normal);
@@ -11,18 +11,18 @@ list {
             padding-bottom:2px;
         }
         &.activatable:focus {
-            background-color: lighten($tooltip_bg,3%);
+            background-color: lighten($INFOBK,3%);
             @include button_flat(default);
         }
 
         &.activatable:hover {
 
-            background-color: lighten($tooltip_bg,5%);
+            background-color: lighten($INFOBK,5%);
             @include button_flat(hover);
         }
 
         &.activatable:active {
-            background-color: darken($tooltip_bg,5%);
+            background-color: darken($INFOBK,5%);
             @include button_flat(pressed);
         }
 
@@ -32,8 +32,8 @@ list {
         }
 
         &.activatable:selected {
-            color: $selected_fg;
-            background-color: $selected_bg;
+            color: $HIGHLIGHTTEXT;
+            background-color: $HIGHLIGHT;
             font-weight: bold;
         }
     }
@@ -46,25 +46,25 @@ placessidebar>viewport>list
     margin-bottom:6px;
     padding:8px;
     box-shadow: $fixed3d_border;
-    background-color: $control_bg;
+    background-color: $C3DFACE;
     row{
         widget>box>image,
         widget>box>label{
             margin:2px;
         }
         &.activatable:focus {
-            background-color: lighten($control_bg,3%);
+            background-color: lighten($C3DFACE,3%);
             @include button_flat(default);
         }
 
         &.activatable:hover {
 
-            background-color: lighten($control_bg,5%);
+            background-color: lighten($C3DFACE,5%);
             @include button_flat(hover);
         }
 
         &.activatable:active {
-            background-color: darken($control_bg,5%);
+            background-color: darken($C3DFACE,5%);
             @include button_flat(pressed);
         }
 
@@ -74,8 +74,8 @@ placessidebar>viewport>list
         }
 
         &.activatable:selected {
-            color: $selected_fg;
-            background-color: darken($selected_bg,10%);
+            color: $HIGHLIGHTTEXT;
+            background-color: darken($HIGHLIGHT,10%);
             font-weight: bold;
         }
     }

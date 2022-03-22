@@ -1,0 +1,12 @@
+window#GeanyMainWindow
+{
+   
+    notebook#notebook1>stack>box,  // Document View
+    scrolledwindow#scrolledwindow7,
+    scrolledwindow#scrolledwindow2
+    {   
+        padding:1px; // Minimal borders
+        box-shadow: $fixed3d_border;
+    }
+    
+}

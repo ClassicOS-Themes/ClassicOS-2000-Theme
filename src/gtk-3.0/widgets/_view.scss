@@ -4,12 +4,12 @@
 %view {
 
   outline: none;
-  color: $document_fg;
-  background-color: $document_bg;
+  color: $WINDOWTEXT;
+  background-color: $WINDOW;
   
   header{
-	background-color:$control_bg;
-	color:$control_fg;
+	background-color:$C3DFACE;
+	color:$BTNTEXT;
   }
   &:disabled {
     @include disabled;
@@ -41,3 +41,4 @@ treeview>header>button{
     padding-right:      5px;
   }
 }
+

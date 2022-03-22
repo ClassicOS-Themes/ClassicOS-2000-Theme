@@ -4,17 +4,20 @@
 headerbar{
     .title,
     .subtitle {
-        color: $titlebar-fg-color;
+        color: $CAPTIONTEXT;
     }
     .title:backdrop,
     .subtitle:backdrop {
-        color: $titlebar-inactive-fg;
+        color: $INACTIVECAPTIONTEXT;
     }
     
     button, button:hover, button:focus, button:checked{
         padding-top:1px;
         padding-bottom:1px;
-        background-color: $control_bg;
+        background-color: $C3DFACE;
+        // TODO: Less intrusive backgrounds and borders
+        // for buttons in headerbars
+   //     box-shadow: 0px 0px 0px 1px $C3DDKSHADOW;
     }
     button:not(.flat):active,button:not(.flat):active:hover{
         padding-top:2px;
@@ -26,9 +29,9 @@ headerbar{
     }
     &:not(.titlebar) {
         padding: 2px;
-        background-color: $control_bg;
+        background-color: $C3DFACE;
         background-image: none;
-        color: $control-fg;
+        color: $BTNTEXT;
     }
 
     .title {
@@ -36,8 +39,6 @@ headerbar{
         padding: 0 12px;
     }
     .flat{
-    
-        
         background-color:transparent;
     }
     .subtitle {
@@ -48,7 +49,7 @@ headerbar{
     entry:active,
     entry selection:focus {
         border-width: 1px;
-        border-color: shade($selected_bg, 0.6);
+        border-color: shade($HIGHLIGHT, 0.6);
     }
 
 
@@ -59,14 +60,13 @@ headerbar{
 {
     border-radius: 0;	
     padding:1px;
-    background-image: linear-gradient(to right, $titlebar-bg-start, $titlebar-bg-end);
-    background-color: $titlebar-bg-start;
-    color: $titlebar-fg-color;
-    &backdrop{
-
-        color: $titlebar-inactive-fg;
-        background-image: linear-gradient(to right, $titlebar-inactive-start, $titlebar-inactive-end);
-        background-color: $titlebar-inactive-start;
+    background-image: linear-gradient(to right, $ACTIVECAPTION, $GRADIENTACTIVECAPTION);
+    background-color: $ACTIVECAPTION;
+    color: $CAPTIONTEXT;
+    &:backdrop{
+        color: $INACTIVECAPTIONTEXT;
+        background-image: linear-gradient(to right, $INACTIVECAPTION, $GRADIENTINACTIVECAPTION);
+        background-color: $INACTIVECAPTION;
     }
 
     headerbar {
@@ -78,33 +78,37 @@ headerbar{
         font-weight: bold;
     }
     .titlebutton {
-        padding: 0;
     
+		padding: 	inherit	;
+        margin-top: 1px;
+        margin-bottom: 1px;
+        
         &.minimize {
             margin-right:-3px;
-            margin-top:-1px;
-            margin-bottom: -1px;
             &, &>image{
                 -gtk-icon-source: image(url(if($variant == 'light',"assets/minimize.svg","assets/minimize-dark.svg")));
             }
         }
         &.maximize {
             margin-left:-3px;
-            margin-top:-1px;
-            margin-bottom: -1px;
             &, &>image{
                 -gtk-icon-source: image(url(if($variant == 'light',"assets/maximize.svg","assets/maximize-dark.svg")));
             }
             
         }
         &.close{
-            margin-top:-1px;
-            margin-bottom: -1px;
             margin-left:-4px;
             &, &>image{
                 -gtk-icon-source: image(url(if($variant == 'light',"assets/close.svg","assets/close-dark.svg")));
             }
-            
+        }
+        image{
+            margin-top: -1px;
+            margin-bottom: -1px;
+        }
+        &:active image{
+            margin-top:-2px;
+            margin-bottom:-2px;
         }
     }
 }

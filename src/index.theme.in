@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=ClassicOS@theme_name@
+Type=X-GNOME-Metatheme
+Comment=The return of the turn of the millenium
+
+[X-GNOME-Metatheme]
+GtkTheme=ClassicOS@theme_name@
+MetacityTheme=ClassicOS@theme_name@
+IconTheme=retrosmart_white
+CursorTheme=retrosmart_white
+CursorSize=16

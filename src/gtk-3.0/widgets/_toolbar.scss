@@ -2,7 +2,7 @@
  * toolbar *
  ***********/
 toolbar, .toolbar {
-    background-color: $control_bg;
+    background-color: $C3DFACE;
     button {
         @include button_flat(normal);
         &:focus{
@@ -17,7 +17,7 @@ toolbar, .toolbar {
         }
         &:checked{
             @include button_flat(pressed);
-            background-color: shade($control_bg,1.1);
+            background-color: shade($C3DFACE,1.1);
         }
     }
 
@@ -31,7 +31,7 @@ toolbar {
         -GtkToolbar-button-relief: normal;
     }
     &:disabled {
-        color: $disabled_fg;
+        color: $GRAYTEXT;
     }
 }
 

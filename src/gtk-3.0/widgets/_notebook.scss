@@ -5,14 +5,14 @@
  notebook {
      
     > header {
-        background-color: $control_bg;
+        background-color: $C3DFACE;
         
         > frame {
             box-shadow: none;
         }
 
         tab { 
-            background-color:$control_bg;
+            background-color:$C3DFACE;
             label {
                 padding: 2px 6px;
             }
@@ -155,14 +155,14 @@
     }
 
     > stack:not(:only-child) {
-        background-color: $control_bg;
+        background-color: $C3DFACE;
         border-radius: 0;
         padding: 4px;
         background-clip: border-box;
         border:none;
-        box-shadow:		inset -1px -1px 0px 1px $shadow,
-                        inset 0px 0px 0px 1px $highlight,
-                        inset -1px -1px 0px 0px $control_fg;
+        box-shadow:		inset -1px -1px 0px 1px $C3DSHADOW,
+                        inset 0px 0px 0px 1px $C3DHIGHLIGHT,
+                        inset -1px -1px 0px 0px $BTNTEXT;
 
         
     }

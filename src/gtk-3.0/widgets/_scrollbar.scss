@@ -3,7 +3,7 @@
  * scrollbar *
  *************/
  scrollbar {
-    background-color: shade($control_bg, 1.1);
+    background-color: shade($C3DFACE, 1.1);
 
     trough {
         background: transparent;
@@ -11,7 +11,7 @@
     
     button {
         padding: 4px;
-        background-color: $control_bg;
+        background-color: $C3DFACE;
         @include combobox_button(normal);
     }
     button:active {
@@ -25,8 +25,8 @@
         min-height: 8px;
         min-width: 16px;
         border-width: 0px;
-        background-color: $control_bg;
-        color: $control_fg;
+        background-color: $C3DFACE;
+        color: $BTNTEXT;
         @include combobox_button(normal);
     }
     &.vertical {

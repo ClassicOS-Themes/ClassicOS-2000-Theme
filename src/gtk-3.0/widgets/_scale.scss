@@ -6,7 +6,7 @@ scale {
     slider {
         @include button_3d(normal);
         border-radius: 0px;
-        background-color: $control_bg;
+        background-color: $C3DFACE;
         background-repeat: no-repeat;
         padding: 10px 3px;
         margin: -8px;
@@ -17,8 +17,8 @@ scale {
     }
     trough {
         padding: 0;
-        background-color: $control_bg;
-        color: $control-fg;
+        background-color: $C3DFACE;
+        color: $BTNTEXT;
         box-shadow: $textbox_border;
         margin: 9px 6px;
         &.vertical{

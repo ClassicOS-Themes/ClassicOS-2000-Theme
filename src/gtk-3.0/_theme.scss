@@ -1,14 +1,32 @@
+$black: #000; // Always gonna be black
+$white: #FFF; // Always gonna be white
+$grey: #aaa;
+$red: #f00; // Always gonna be blue
+$green: #0f0; // Always gonna be blue
+$blue: #00f; // Always gonna be blue
+
+$warning-bg: #999900;
+$warning-fg: #ffffcc;
+$error-bg: #990000;
+$error-fg: #ffcccc;
+$question-bg: #cccccc;
+$question-fg: #000000;
+
+$success-color: #53d013;
+$warning_color: #f57600;
+$error_color: #cc0000;
+
 @mixin disabled{
-		color: $disabled_fg;
-		text-shadow: 1px 1px $highlight;
+		color: $GRAYTEXT;
+		text-shadow: 1px 1px $C3DHIGHLIGHT;
 		-gtk-icon-effect: 	dim;
 }
 
 %selected_items {
-  background-color: $selected_bg;
+  background-color: $HIGHLIGHT;
 
   @at-root %nobg_selected_items, & {
-    color: $selected_fg;
+    color: $HIGHLIGHTTEXT;
   }
 }
 
@@ -36,6 +54,7 @@
 @import 'widgets/view';
 @import 'widgets/widget';
 
+@import 'apps/geany';
 @import 'apps/xfce';
 @import 'apps/nemo';
 @import 'apps/libhandy';
@@ -61,7 +80,7 @@ decoration {
      border: none;
      border-radius: 0;
      margin: 2px;
-     background-color: $titlebar-bg-start;
+     background-color: $ACTIVECAPTION;
      box-shadow: none; 
 }
 GtkTrayIcon{
@@ -70,6 +89,6 @@ GtkTrayIcon{
 	}
 }
 #pathbarbox{
-	background-color:$control_bg;
-	color:$control_fg;
+	background-color:$C3DFACE;
+	color:$BTNTEXT;
 }

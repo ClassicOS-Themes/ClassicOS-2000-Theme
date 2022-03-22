@@ -2,7 +2,7 @@
 
 A theme that tries to faithfully reproduce the classic look of PC operating systems at the turn of the millenium.
 
-Includes the "Standard" (ClassicOS2000) and "Classic" (ClassicOS98) color schemes. 
+Includes a wide range of color schemes, some including a dark mode.
 
 Currently this is only a GTK 3 theme. You'll need to find your own window manager, gtk2, qt, etc... themes.
 
@@ -25,16 +25,14 @@ By default, builds the ClassicOS2000 theme. Add `-Dstandard_colors=false` to mes
 #### Local (User) Install ####
 ```
 meson --prefix=$HOME/.local builddir
-cd builddir
-ninja
-ninja install
+ninja -C builddir
+ninja -C builddir install
 ```
 
 #### System Install ####
 
 ```
-meson --prefix=/usr builddir
-cd builddir
-ninja
-ninja install
+meson builddir
+ninja -C builddir
+ninja -C install
 ```

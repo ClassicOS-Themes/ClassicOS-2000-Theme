@@ -24,7 +24,7 @@ check {
         -gtk-icon-source: image(url("assets/indeterminate-symbolic.svg"));
     }
     &:checked:disabled{
-        background-color: $control_bg;
+        background-color: $C3DFACE;
         -gtk-icon-source: image(url("assets/check-symbolic-disabled.svg"));
     }
 }
@@ -35,7 +35,7 @@ radio {
     box-shadow: $radio_border;
     background-color: $white;
     &:disabled {
-        background-color: $control_bg;
+        background-color: $C3DFACE;
     }
     &:checked {
         -gtk-icon-source: image(url("assets/bullet-symbolic.svg"));
@@ -51,6 +51,6 @@ radio {
     }
     &:checked:disabled{
         -gtk-icon-source: image(url("assets/bullet-symbolic-disabled.svg"));
-        background-color: $control_bg;
+        background-color: $C3DFACE;
     }
 }

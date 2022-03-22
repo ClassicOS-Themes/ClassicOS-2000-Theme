@@ -1,2 +1,3 @@
-option('generate_sourcemaps', type: 'boolean', value: true)
-option('standard_colors', type: 'boolean', value: true)
+option('colorscheme', type: 'string', value: 'standard')
+option('dark_colorscheme', type: 'string', value: 'standard_dark')
+option('theme_name', type: 'string', value: 'ClassicOS2000')
