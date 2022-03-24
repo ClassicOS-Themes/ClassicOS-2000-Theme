@@ -1,0 +1,94 @@
+$black: #000; // Always gonna be black
+$white: #FFF; // Always gonna be white
+$grey: #aaa;
+$red: #f00; // Always gonna be blue
+$green: #0f0; // Always gonna be blue
+$blue: #00f; // Always gonna be blue
+
+$warning-bg: #999900;
+$warning-fg: #ffffcc;
+$error-bg: #990000;
+$error-fg: #ffcccc;
+$question-bg: #cccccc;
+$question-fg: #000000;
+
+$success-color: #53d013;
+$warning_color: #f57600;
+$error_color: #cc0000;
+
+@mixin disabled{
+		color: $GRAYTEXT;
+		text-shadow: 1px 1px $C3DHIGHLIGHT;
+		-gtk-icon-effect: 	dim;
+}
+
+%selected_items {
+  background-color: $HIGHLIGHT;
+
+  @at-root %nobg_selected_items, & {
+    color: $HIGHLIGHTTEXT;
+  }
+}
+
+
+@import '../gtk-3.0/colors-public';
+@import '../gtk-3.0/shadow';
+@import '../gtk-3.0/drawing';
+@import '../gtk-3.0/widgets/buttons';
+@import '../gtk-3.0/widgets/checkbox_radiobutton';
+@import '../gtk-3.0/widgets/containers';
+@import '../gtk-3.0/widgets/entry_combobox';
+@import '../gtk-3.0/widgets/expander';
+@import '../gtk-3.0/widgets/headerbar';
+@import '../gtk-3.0/widgets/list';
+@import '../gtk-3.0/widgets/menus';
+@import '../gtk-3.0/widgets/notebook';
+@import '../gtk-3.0/widgets/popover';
+@import '../gtk-3.0/widgets/progress_level_bar';
+@import '../gtk-3.0/widgets/scale';
+@import '../gtk-3.0/widgets/scrollbar';
+@import '../gtk-3.0/widgets/separator';
+@import '../gtk-3.0/widgets/spinbutton';
+@import '../gtk-3.0/widgets/switch';
+@import '../gtk-3.0/widgets/toolbar';
+@import '../gtk-3.0/widgets/view';
+@import '../gtk-3.0/widgets/widget';
+
+@import '../gtk-3.0/apps/geany';
+@import '../gtk-3.0/apps/xfce';
+@import '../gtk-3.0/apps/nemo';
+@import '../gtk-3.0/apps/libhandy';
+
+
+decoration {
+    border-style: none;
+    border-radius: 0;
+	@include border(window);
+
+    /* this is used for the resize cursor area */
+    margin: 10px;
+}
+.popup decoration {
+    box-shadow: none;
+}
+.ssd {
+	decoration {
+		@include border(window);
+	}
+}
+.solid-csd decoration {
+     border: none;
+     border-radius: 0;
+     margin: 2px;
+     background-color: $ACTIVECAPTION;
+     box-shadow: none; 
+}
+GtkTrayIcon{
+	decoration{
+		box-shadow:none;
+	}
+}
+#pathbarbox{
+	background-color:$C3DFACE;
+	color:$BTNTEXT;
+}

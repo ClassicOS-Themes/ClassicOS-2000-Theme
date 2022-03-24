@@ -12,6 +12,7 @@ Pairs well with the accompanying scalable icon theme found at https://github.com
 
 (coming soon)
 
+
 ## Installation
 
 Build Dependencies: `sassc` and `meson`
@@ -36,3 +37,7 @@ meson builddir
 ninja -C builddir
 ninja -C install
 ```
+
+## License
+
+Dual Licensed: GPL-2.0+ or MIT

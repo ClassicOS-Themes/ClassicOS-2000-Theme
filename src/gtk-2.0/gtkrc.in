@@ -1,0 +1,30 @@
+style "standard-default"
+{
+  fg[ACTIVE]        = "@BTNTEXT@"
+  fg[INSENSITIVE]   = "@GRAYTEXT@"
+  fg[NORMAL]        = "@BTNTEXT@"
+  fg[PRELIGHT]      = "@BTNTEXT@"
+  fg[SELECTED]      = "@HIGHLIGHTTEXT@"
+
+  bg[ACTIVE]        = "@C3DFACE@"
+  bg[INSENSITIVE]   = "@C3DFACE@"
+  bg[NORMAL]        = "@C3DFACE@" 
+  bg[PRELIGHT]      = "@C3DFACE@" 
+  bg[SELECTED]      = "@HIGHLIGHT"
+
+  base[ACTIVE]      = "@HIGHLIGHT@"
+  base[INSENSITIVE] = "@WINDOW@"
+  base[NORMAL]      = "@WINDOW@"
+  base[PRELIGHT]    = "@HIGHLIGHT@"
+  base[SELECTED]    = "@HIGHLIGHT@"
+
+  text[ACTIVE]      = "@HIGHLIGHTTEXT@"
+  text[INSENSITIVE] = "@WINDOWTEXT@"
+  text[NORMAL]      = "@WINDOWTEXT@"
+  text[PRELIGHT]    = "@HIGHLIGHTTEXT@"
+  text[SELECTED]    = "@HIGHLIGHTTEXT@"
+  engine "redmond95" {}
+}
+
+class "GtkWidget" style "standard-default"
+widget_class “XfdesktopIconView” style “standard-default”
