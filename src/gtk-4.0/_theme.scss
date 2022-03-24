@@ -19,7 +19,7 @@ $error_color: #cc0000;
 @mixin disabled{
 		color: $GRAYTEXT;
 		text-shadow: 1px 1px $C3DHIGHLIGHT;
-		-gtk-icon-effect: 	dim;
+	//	-gtk-icon-effect: 	dim;
 }
 
 %selected_items {
@@ -34,14 +34,14 @@ $error_color: #cc0000;
 @import '../gtk-3.0/colors-public';
 @import '../gtk-3.0/shadow';
 @import '../gtk-3.0/drawing';
-@import '../gtk-3.0/widgets/buttons';
-@import '../gtk-3.0/widgets/checkbox_radiobutton';
+@import 'widgets/buttons';
+@import 'widgets/checkbox_radiobutton';
 @import '../gtk-3.0/widgets/containers';
 @import '../gtk-3.0/widgets/entry_combobox';
 @import '../gtk-3.0/widgets/expander';
 @import '../gtk-3.0/widgets/headerbar';
 @import '../gtk-3.0/widgets/list';
-@import '../gtk-3.0/widgets/menus';
+@import 'widgets/menus';
 @import '../gtk-3.0/widgets/notebook';
 @import '../gtk-3.0/widgets/popover';
 @import '../gtk-3.0/widgets/progress_level_bar';
@@ -50,14 +50,14 @@ $error_color: #cc0000;
 @import '../gtk-3.0/widgets/separator';
 @import '../gtk-3.0/widgets/spinbutton';
 @import '../gtk-3.0/widgets/switch';
-@import '../gtk-3.0/widgets/toolbar';
+@import 'widgets/toolbar';
 @import '../gtk-3.0/widgets/view';
 @import '../gtk-3.0/widgets/widget';
 
-@import '../gtk-3.0/apps/geany';
-@import '../gtk-3.0/apps/xfce';
-@import '../gtk-3.0/apps/nemo';
-@import '../gtk-3.0/apps/libhandy';
+//@import '../gtk-3.0/apps/geany';
+//@import '../gtk-3.0/apps/xfce';
+//@import '../gtk-3.0/apps/nemo';
+//@import '../gtk-3.0/apps/libhandy';
 
 
 decoration {

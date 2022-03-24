@@ -1,0 +1,171 @@
+/*
+ * Notebook
+ *   a.k.a. TabControl
+ */
+ notebook {
+     
+    > header {
+        background-color: $C3DFACE;
+        
+        > frame {
+            box-shadow: none;
+        }
+
+        tab { 
+            background-color:$C3DFACE;
+            label {
+                padding: 2px 6px;
+            }
+            button {
+            
+                margin:2px;
+                padding: 0;
+            }
+            /* close button styling */
+            button, 
+            button:active,
+            button:hover {
+                padding: 1px;
+                box-shadow: none;
+            }
+        }
+
+        &.top{
+            tabs{
+                padding-left:2px;
+                padding-right:2px;
+            }
+            tab {
+                border-bottom-width: 0;
+                border-radius: 2px 2px 0 0;
+                margin-bottom: -1px;
+                margin-top:2px;
+                box-shadow: $tab-top-border;
+                &:checked {
+                    margin-top:0px;
+                    margin-left:-2px;
+                    margin-right:-2px;
+                    box-shadow: $tab-top-active-border;
+                    padding-left:2px;
+                    padding-right:2px;
+                }
+            }
+        }
+        &.bottom{
+            tabs{
+                padding-left:2px;
+                padding-right:2px;
+            }
+    
+            tab {
+                border-bottom-width: 0;
+                border-radius: 0px 0px 2px 2px;
+                margin-bottom: 2px;
+                margin-top:-2px;
+                box-shadow: $tab-btm-border;
+                &:checked {
+                    margin-top:-2px;
+                    margin-bottom: 0px;
+                    margin-left:-2px;
+                    margin-right:-2px;
+                    box-shadow: $tab-btm-active-border;
+                    padding-left:2px;
+                    padding-right:2px;
+                }
+            }
+        }
+        &.left{
+            tabs{
+                padding-top:2px;
+                padding-bottom:2px;
+            }
+            tab {
+                border-bottom-width: 0;
+                border-radius: 2px 0px 0px 2px;
+                margin-right: -1px;
+                margin-top:0px;
+                box-shadow: $tab-left-border;
+                &:checked {
+                    margin-top:0px;
+                    margin-top:-2px;
+                    margin-bottom: -2px;
+                    box-shadow: $tab-left-active-border;
+                    padding-top:2px;
+                    padding-bottom:2px;
+                }
+            }
+        }
+        &.right{
+            tabs{
+                padding-top:2px;
+                padding-bottom:2px;
+            }
+            tab {
+                border-bottom-width: 0;
+                border-radius: 0px 2px 2px 0;
+                margin-left: -2px;
+                margin-top:0px;
+                box-shadow: $tab-right-border;
+                &:checked {
+                    margin-top:0px;
+                    margin-top:-2px;
+                    margin-bottom: -2px;
+                    box-shadow: $tab-right-active-border;
+                    padding-top:2px;
+                    padding-bottom:2px;
+                }
+            }
+        }
+        
+        &.top, &.bottom
+        {
+            > tabs > arrow.up
+            {
+                -gtk-icon-source: -gtk-icontheme("pan-end-symbolic");
+                &:last-child {
+                    margin-left: 2px;
+                }
+            }
+            > tabs > arrow.down
+            {
+                -gtk-icon-source: -gtk-icontheme("pan-start-symbolic");
+                &:first-child {
+                    margin-right: 2px;
+                }
+            }
+        }
+        &.left, &.right
+        {
+            > tabs > arrow.up
+            {
+                -gtk-icon-source: -gtk-icontheme("pan-down-symbolic");
+                &:last-child {
+                    margin-top: 2px;
+                }
+            }
+            > tabs > arrow.down
+            {
+                -gtk-icon-source: -gtk-icontheme("pan-up-symbolic");
+                &:first-child {
+                    margin-bottom: 2px;
+                }
+            }
+        }
+        
+    }
+
+    > stack:not(:only-child) {
+        background-color: $C3DFACE;
+        border-radius: 0;
+        padding: 4px;
+        background-clip: border-box;
+        border:none;
+        box-shadow:		inset -1px -1px 0px 1px $C3DSHADOW,
+                        inset 0px 0px 0px 1px $C3DHIGHLIGHT,
+                        inset -1px -1px 0px 0px $BTNTEXT;
+
+        
+    }
+
+
+}

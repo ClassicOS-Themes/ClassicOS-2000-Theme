@@ -1,0 +1,87 @@
+scale {
+    min-height: 1px;
+    min-width: 1px;
+    border-width: 1px;
+    border-radius: 0px;
+    slider {
+        @include button_3d(normal);
+        border-radius: 0px;
+        background-color: $C3DFACE;
+        background-repeat: no-repeat;
+        padding: 10px 3px;
+        margin: -8px;
+        &:disabled {
+            border-radius: 0px;
+            //background-image: url("assets/slider-horiz.png");
+        }
+    }
+    trough {
+        padding: 0;
+        background-color: $C3DFACE;
+        color: $BTNTEXT;
+        box-shadow: $textbox_border;
+        margin: 9px 6px;
+        &.vertical{
+            margin: 6px 9px;
+        }
+    }
+
+    highlight {
+        background-color: transparent;
+    }
+
+    trough:disabled,
+    highlight:disabled {
+        background-image: none;
+    }
+    &.horizontal{
+        indicator {
+            min-height: 6px;
+            min-width: 1px;
+        }
+    }
+    &.vertical{
+        slider {
+            padding: 3px 10px;
+        }
+        indicator {
+            min-height: 1px;
+            min-width: 6px;
+        }
+    }
+    &.fine-tune{
+        slider{
+            &:active,
+            &:active:hover,
+            &.horizontal:active,
+            &.horizontal:active:hover {
+                background-size: 70%;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+        }
+
+    }
+    &, &.fine-tune{
+        marks{
+            .top{
+                margin-bottom: 6px;
+                margin-top: -12px;
+                margin-right: 6px;
+                margin-left: -12px;
+            }
+            .bottom{
+
+                margin-top: 6px;
+                margin-bottom: -12px;
+                margin-left: 6px;
+                margin-right: -12px;
+            }
+
+        }
+    }
+}
+
+
+
+

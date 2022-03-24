@@ -1,30 +1,103 @@
-style "standard-default"
+# This mostly based on the Redmond theme from gtk-engines
+
+gtk-icon-sizes = "mini-commander-icon=32,32:print-manager=32,32:panel-button=16,16:gtk-dnd=32,32:gtk-menu=16,16:panel-menu=16,16:gtk-large-toolbar=16,16:gtk-small-toolbar=16,16:gtk-button=16,16:gtk-dialog=32,32"
+
+style "default"
 {
-  fg[ACTIVE]        = "@BTNTEXT@"
-  fg[INSENSITIVE]   = "@GRAYTEXT@"
-  fg[NORMAL]        = "@BTNTEXT@"
-  fg[PRELIGHT]      = "@BTNTEXT@"
-  fg[SELECTED]      = "@HIGHLIGHTTEXT@"
+    fg[ACTIVE]        = "@BTNTEXT@"
+    fg[INSENSITIVE]   = "@GRAYTEXT@"
+    fg[NORMAL]        = "@BTNTEXT@"
+    fg[PRELIGHT]      = "@BTNTEXT@"
+    fg[SELECTED]      = "@HIGHLIGHTTEXT@"
 
-  bg[ACTIVE]        = "@C3DFACE@"
-  bg[INSENSITIVE]   = "@C3DFACE@"
-  bg[NORMAL]        = "@C3DFACE@" 
-  bg[PRELIGHT]      = "@C3DFACE@" 
-  bg[SELECTED]      = "@HIGHLIGHT"
+    bg[ACTIVE]        = "@C3DFACE@"
+    bg[INSENSITIVE]   = "@C3DFACE@"
+    bg[NORMAL]        = "@C3DFACE@" 
+    bg[PRELIGHT]      = "@C3DFACE@" 
+    bg[SELECTED]      = "@HIGHLIGHT@"
 
-  base[ACTIVE]      = "@HIGHLIGHT@"
-  base[INSENSITIVE] = "@WINDOW@"
-  base[NORMAL]      = "@WINDOW@"
-  base[PRELIGHT]    = "@HIGHLIGHT@"
-  base[SELECTED]    = "@HIGHLIGHT@"
+    base[ACTIVE]      = "@HIGHLIGHT@"
+    base[INSENSITIVE] = "@WINDOW@"
+    base[NORMAL]      = "@WINDOW@"
+    base[PRELIGHT]    = "@HIGHLIGHT@"
+    base[SELECTED]    = "@HIGHLIGHT@"
 
-  text[ACTIVE]      = "@HIGHLIGHTTEXT@"
-  text[INSENSITIVE] = "@WINDOWTEXT@"
-  text[NORMAL]      = "@WINDOWTEXT@"
-  text[PRELIGHT]    = "@HIGHLIGHTTEXT@"
-  text[SELECTED]    = "@HIGHLIGHTTEXT@"
-  engine "redmond95" {}
+    text[ACTIVE]      = "@HIGHLIGHTTEXT@"
+    text[INSENSITIVE] = "@WINDOWTEXT@"
+    text[NORMAL]      = "@WINDOWTEXT@"
+    text[PRELIGHT]    = "@HIGHLIGHTTEXT@"
+    text[SELECTED]    = "@HIGHLIGHTTEXT@"
+    
+    GtkButton::child_displacement_x = 1
+    GtkButton::child_displacement_y = 1
+    GtkComboBox::appears-as-list = 1
+
+    GtkWidget::interior_focus = 2
+    GtkButton::default_border = { 1, 1, 1, 1 }
+    GtkButton::default_outside_border = { 0, 0, 0, 0 }
+    GtkOptionMenu::indicator_size = { 9, 5 }
+    GtkOptionMenu::indicator_spacing = { 7, 5, 2, 2 }
+    GtkComboBox::appears-as-list = 1
+    GtkNotebook::tab-overlap = 4
+
+
+    GtkMenu::horizontal-padding = 1
+    GtkMenu::vertical-padding = 1
+    GtkMenu::horizontal-offset = -6
+
+    GtkScrolledWindow::scrollbar-spacing = 0
+    GtkScrolledWindow::scrollbars-within-bevel = 1
+
+
+    engine "redmond95" {}
 }
 
-class "GtkWidget" style "standard-default"
-widget_class “XfdesktopIconView” style “standard-default”
+class "GtkWidget" style "default"
+
+style "menu"{
+    bg[PRELIGHT] = "@HIGHLIGHT@"
+    fg[PRELIGHT] = "@HIGHLIGHTTEXT@"
+}
+
+widget_class "*MenuItem*" style "menu"
+
+style "menubar-item"
+{
+    bg[PRELIGHT] = "@MENU@"
+    fg[PRELIGHT] = "@MENUTEXT@"
+}
+
+class "*MenuBar.*MenuItem*" style "menubar-item"
+widget_class "*MenuBar.*MenuItem*" style "menubar-item"
+
+style "scrollbar"
+{
+    GtkRange::trough_border = 0
+    GtkRange::slider_width = 16
+    GtkRange::stepper_size = 16
+    GtkRange::stepper_spacing = 0
+}
+
+class "GtkScrollbar" style "scrollbar"
+
+style "scales"
+{
+  GtkRange::slider-width = 21
+  GtkScale::slider-length = 11
+}
+
+class "*Scale*" style "scales"
+
+style "option-menu"
+{
+  GtkOptionMenu::indicator_width = 7
+  GtkOptionMenu::indicator_left_spacing = 6
+  GtkOptionMenu::indicator_right_spacing = 4
+}
+
+class "GtkOptionMenu" style "option-menu"
+
+style "progressbar" {
+  fg[PRELIGHT] = "@HIGHLIGHTTEXT@"
+} 
+class "GtkProgressBar" style "progressbar"

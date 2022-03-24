@@ -1,0 +1,63 @@
+
+/*************
+ * scrollbar *
+ *************/
+ scrollbar {
+    background-color: shade($C3DFACE, 1.1);
+
+    trough {
+        background: transparent;
+    }
+    
+    button {
+        padding: 4px;
+        background-color: $C3DFACE;
+        @include combobox_button(normal);
+    }
+    button:active {
+        padding-left: 5px;
+        padding-top: 5px;
+        padding-right: 3px;
+        padding-bottom: 3px;
+        @include combobox_button(pressed);
+    }
+    slider {
+        min-height: 8px;
+        min-width: 16px;
+        border-width: 0px;
+        background-color: $C3DFACE;
+        color: $BTNTEXT;
+        @include combobox_button(normal);
+    }
+    &.vertical {
+        button {
+            min-height: 8px;
+            &.down {
+                -gtk-icon-source: -gtk-icontheme("pan-down-symbolic");
+            }
+            &.up {
+                -gtk-icon-source: -gtk-icontheme("pan-up-symbolic");
+            }
+        }
+    }
+    &.horizontal {
+        button {
+            min-width: 8px;
+            &.down {
+                /*    -gtk-icon-source: -gtk-icontheme("pan-right-symbolic");*/
+                -gtk-icon-source: -gtk-icontheme("pan-end-symbolic");
+            }
+            &.up {
+                /*    -gtk-icon-source: -gtk-icontheme("pan-left-symbolic");*/
+                -gtk-icon-source: -gtk-icontheme("pan-start-symbolic");
+            }
+        }
+        slider {
+            min-width: 8px;
+            min-height: 16px;
+        }
+    }
+    &.right.vertical:not(.overlay-indicator){
+        margin-left:-3px;
+    }
+}

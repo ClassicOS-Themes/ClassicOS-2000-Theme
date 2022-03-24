@@ -1,0 +1,32 @@
+switch {
+	padding: 2px;
+	@include border(fixed);
+	color: $BTNTEXT;
+    background-color: darken($C3DFACE,5%);
+    &:checked {
+        background-color: $HIGHLIGHT;
+        color: $HIGHLIGHT;
+    }
+    &:disabled {
+        background-color: $C3DFACE;
+        color: $GRAYTEXT;
+        slider {
+            box-shadow: none;
+            border-color: $GRAYTEXT;
+        }
+    }
+    slider {
+        min-width: 18px;
+        min-height: 18px;
+        border-width: 1px;
+        border-radius: 0px;
+        border-style: solid;
+        border-color: $BTNTEXT;
+        border-top-color: #f1f1f1;
+        border-left-color: #f1f1f1;
+        background-color: $C3DFACE;
+        color: $BTNTEXT;
+        box-shadow: inset -1px 0 shade($C3DFACE, 0.65), inset 0 -1px shade($C3DFACE, 0.65), inset 1px 0 #f1f1f1,
+            inset 0 1px #f1f1f1;
+    }
+}

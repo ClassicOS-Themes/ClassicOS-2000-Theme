@@ -1,6 +1,8 @@
 #!/bin/bash
 # Makes all colorschemes defined in ./shemes
 # installs to ~/.local/share/themes
+
+
 source schemes
 echo "${schemes[@]}"
 a=(foo bar doo)

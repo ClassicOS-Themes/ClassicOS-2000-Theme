@@ -1,0 +1,65 @@
+entry {
+    @include border(textbox);
+    padding: 4px 3px;
+    background-color: $WINDOW;
+    color: $WINDOWTEXT;
+    &:selected,
+    &:selected:focus,
+    selection,
+    selection:focus {
+        @extend %selected_items;
+    }
+}
+
+
+combobox {
+    padding: 0px;
+    @include border(textbox);
+    entry.combo {
+        margin-left: 2px;
+        margin-top: 2px;
+        margin-bottom: 2px;
+        box-shadow: none;
+        &:disabled {
+            box-shadow: none;
+        }
+    }
+
+    button.combo {
+        padding-top: 2px;
+        padding-bottom: 2px;
+        @include combobox_button(normal);
+        &:active,
+        &:checked {
+            @include combobox_button(pressed);
+        }
+        &:focus {
+            @include button_3d(default);
+        }
+    }
+
+    /*button-style combobox fix*/
+    button:not(:first-child) {
+        padding: 2px;
+        margin-left: 0px;
+        margin-bottom: 2px;
+        margin-top: 2px;
+        margin-right: 2px;
+    }
+}
+arrow,
+combobox arrow {
+
+    -gtk-icon-source: -gtk-icontheme("pan-down-symbolic");
+    min-height: 16px;
+    min-width: 16px;
+
+    &.horizontal {
+        -gtk-icon-source: -gtk-icontheme("pan-right-symbolic");
+        min-height: 16px;
+        min-width: 16px;
+    }
+}
+button.combo:not(:only-child) {
+    padding: 4px 3px;
+}

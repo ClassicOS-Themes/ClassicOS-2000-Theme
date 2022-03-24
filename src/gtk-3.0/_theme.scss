@@ -16,19 +16,6 @@ $success-color: #53d013;
 $warning_color: #f57600;
 $error_color: #cc0000;
 
-@mixin disabled{
-		color: $GRAYTEXT;
-		text-shadow: 1px 1px $C3DHIGHLIGHT;
-		-gtk-icon-effect: 	dim;
-}
-
-%selected_items {
-  background-color: $HIGHLIGHT;
-
-  @at-root %nobg_selected_items, & {
-    color: $HIGHLIGHTTEXT;
-  }
-}
 
 
 @import 'colors-public';
@@ -58,6 +45,20 @@ $error_color: #cc0000;
 @import 'apps/xfce';
 @import 'apps/nemo';
 @import 'apps/libhandy';
+
+@mixin disabled{
+  color: $GRAYTEXT;
+  text-shadow: 1px 1px $C3DHIGHLIGHT;
+  -gtk-icon-effect: 	dim;
+}
+
+%selected_items {
+background-color: $HIGHLIGHT;
+
+@at-root %nobg_selected_items, & {
+  color: $HIGHLIGHTTEXT;
+}
+}
 
 
 decoration {

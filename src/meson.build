@@ -67,4 +67,4 @@ endforeach
 # Now build all the individual components
 subdir('gtk-2.0')
 subdir('gtk-3.0')
-subdir('gtk-4.0')
+# subdir('gtk-4.0') #temp. omitted because it breaks things

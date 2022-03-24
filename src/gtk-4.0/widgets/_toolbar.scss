@@ -1,0 +1,55 @@
+/***********
+ * toolbar *
+ ***********/
+toolbar, .toolbar {
+    background-color: $C3DFACE;
+    button {
+        @include button_flat(normal);
+        &:focus{
+            @include button_flat(default);
+        }
+        &:hover{
+            @include button_flat(hover);
+        }
+    
+        &:active{
+            @include button_flat(pressed);
+        }
+        &:checked{
+            @include button_flat(pressed);
+            background-color: shade($C3DFACE,1.1);
+        }
+    }
+
+    
+}
+
+toolbar {
+    @include border(toolbar);
+    padding: 4px;
+    //menubar {
+   //     -GtkToolbar-button-relief: normal;
+   // }
+    &:disabled {
+        color: $GRAYTEXT;
+    }
+}
+
+
+.primary-toolbar
+{
+    toolbar{
+      //  -GtkWidget-window-dragging: true;
+        padding: 4px;
+    }
+    combobox,
+    button,button:disabled,button:focus,button:hover,button:checked{
+        padding: 6px 8px;
+    }
+    button:active{
+        padding-left: 9px;
+        padding-right: 7px;
+        padding-top:7px;
+        padding-bottom:5px;
+    }
+}

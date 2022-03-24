@@ -1,0 +1,82 @@
+list {
+    background-color: $INFOBK;
+    color: $INFOTEXT;
+
+    row {
+        @include button_flat(normal);
+        >label{
+            padding-left:3px;
+            padding-top:2px;
+            padding-right:3px;
+            padding-bottom:2px;
+        }
+        &.activatable:focus {
+            background-color: lighten($INFOBK,3%);
+            @include button_flat(default);
+        }
+
+        &.activatable:hover {
+
+            background-color: lighten($INFOBK,5%);
+            @include button_flat(hover);
+        }
+
+        &.activatable:active {
+            background-color: darken($INFOBK,5%);
+            @include button_flat(pressed);
+        }
+
+        &:checked,
+        &:selected {
+            @include button_flat(checked);
+        }
+
+        &.activatable:selected {
+            color: $HIGHLIGHTTEXT;
+            background-color: $HIGHLIGHT;
+            font-weight: bold;
+        }
+    }
+    
+}
+placessidebar>viewport>list
+{
+    margin-left: 6px;
+    margin-top:6px;
+    margin-bottom:6px;
+    padding:8px;
+    box-shadow: $fixed3d_border;
+    background-color: $C3DFACE;
+    row{
+        widget>box>image,
+        widget>box>label{
+            margin:2px;
+        }
+        &.activatable:focus {
+            background-color: lighten($C3DFACE,3%);
+            @include button_flat(default);
+        }
+
+        &.activatable:hover {
+
+            background-color: lighten($C3DFACE,5%);
+            @include button_flat(hover);
+        }
+
+        &.activatable:active {
+            background-color: darken($C3DFACE,5%);
+            @include button_flat(pressed);
+        }
+
+        &:checked,
+        &:selected {
+            @include button_flat(checked);
+        }
+
+        &.activatable:selected {
+            color: $HIGHLIGHTTEXT;
+            background-color: darken($HIGHLIGHT,10%);
+            font-weight: bold;
+        }
+    }
+}

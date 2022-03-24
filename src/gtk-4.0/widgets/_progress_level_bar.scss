@@ -1,0 +1,72 @@
+/* progressbar */
+ progressbar {
+    trough,
+    progress {
+        min-height: 18px;
+    }
+    trough {
+        padding: 2px;
+        @include border(fixed);
+    }
+    progress {
+        color: $HIGHLIGHTTEXT;
+        background-color: $HIGHLIGHT;
+    }
+    &.vertical {
+        trough,
+        progress {
+            min-height: 0;
+            min-width: 18px;
+        }
+        text {
+            color: transparent;
+            background-color: transparent;
+        }
+    }
+}
+ /* spinner */
+spinner {
+    background: none;
+    opacity: 0;
+    -gtk-icon-source: -gtk-icontheme("process-working-symbolic");
+}
+spinner:checked {
+    opacity: 1;
+    animation: spin 1s linear infinite;
+}
+
+
+/* levelbar */
+levelbar {
+    @include border(fixed);
+    trough {
+        padding: 2px;
+        border-radius: 0px;
+        background-color: $C3DFACE;
+        border: none;
+
+        @include border(fixed);
+    }
+
+    block {
+        padding: 2px;
+        margin: 1px;
+        border-radius: 1px;
+        border: none;
+        outline: 0;
+        &.filled {
+            background-color: $HIGHLIGHT;
+        }
+        &.high {
+            background-color: $HIGHLIGHT;
+        }
+
+        &.low {
+            background-color: $HIGHLIGHT;
+        }
+
+        &.empty {
+            background-color: transparent;
+        }
+    }
+}

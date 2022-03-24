@@ -1,0 +1,20 @@
+ *{
+    -gtk-icon-style: regular; // disable symbolic icons 
+ }
+ 
+.background {
+  color: $BTNTEXT;
+  background-color: $C3DFACE;
+}
+
+*:disabled { @include disabled; }
+
+.gtkstyle-fallback {
+  color: $BTNTEXT;
+  background-color: $C3DFACE;
+
+  &:selected {
+    color: $HIGHLIGHTTEXT;
+    background-color: $HIGHLIGHT;
+  }
+}
