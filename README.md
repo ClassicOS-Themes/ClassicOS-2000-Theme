@@ -10,8 +10,8 @@ Pairs well with the accompanying scalable icon theme found at https://github.com
 
 ## Screenshots
 
-(coming soon)
-
+ - [Applications](screenshots/applications/README.md)
+ - [Colorscheme Gallery](screenshots/colorschemes/README.md)
 
 ## Installation
 
