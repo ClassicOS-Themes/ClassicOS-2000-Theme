@@ -82,33 +82,35 @@ headerbar{
 		padding: 	inherit	;
         margin-top: 1px;
         margin-bottom: 1px;
-        
+        color: $BTNTEXT;
         &.minimize {
             margin-right:-3px;
             &, &>image{
-                -gtk-icon-source: image(url(if($variant == 'light',"assets/minimize.svg","assets/minimize-dark.svg")));
+                -gtk-icon-source: image(-gtk-recolor(url(if($variant == 'light',"assets/minimize.svg","assets/minimize-dark.svg"))));
             }
         }
         &.maximize {
             margin-left:-3px;
             &, &>image{
-                -gtk-icon-source: image(url(if($variant == 'light',"assets/maximize.svg","assets/maximize-dark.svg")));
+                -gtk-icon-source: image(-gtk-recolor(url(if($variant == 'light',"assets/maximize.svg","assets/maximize-dark.svg"))));
             }
             
         }
         &.close{
             margin-left:-4px;
             &, &>image{
-                -gtk-icon-source: image(url(if($variant == 'light',"assets/close.svg","assets/close-dark.svg")));
+                -gtk-icon-source: image(-gtk-recolor(url(if($variant == 'light',"assets/close.svg","assets/close-dark.svg"))));
             }
         }
         image{
             margin-top: -1px;
             margin-bottom: -1px;
+            color: $BTNTEXT;
         }
         &:active image{
             margin-top:-2px;
             margin-bottom:-2px;
+            color: $BTNTEXT;
         }
     }
 }

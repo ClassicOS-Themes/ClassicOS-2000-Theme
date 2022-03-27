@@ -40,12 +40,15 @@ menu>menuitem{
     &:active {
         background-color: $HIGHLIGHT;
     }
+
+    // *:active,
+    // *:hover,
     &:hover,
-    &:active,
-    *:active,
-    *:hover {
+    &:active
+    {
         color: $HIGHLIGHTTEXT;
     }
+    
     &:disabled {
         @include disabled;
     }

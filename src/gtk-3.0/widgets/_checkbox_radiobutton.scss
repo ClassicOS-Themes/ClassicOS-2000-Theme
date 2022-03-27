@@ -1,56 +1,48 @@
-check,
-radio,
-check:disabled,
-radio:disabled {
-    border-style: none;
-    background-color: $white;
-    // @include border(textbox);
-}
-
 %check,
 check {
-    background-color: $white;
+    background-color: $WINDOW;
     box-shadow: $check_border;
-    &:disabled {
-    }
-
+    border-style: none;
+    color: $WINDOWTEXT;
     &:checked {
-        background-color: $white;
-        -gtk-icon-source: image(url("assets/check-symbolic.svg"));
+        background-color: $WINDOW;
+        -gtk-icon-source: image(-gtk-recolor(url("assets/check-symbolic.svg")));
     }
 
     &:indeterminate {
-        background-color: $white;
-        -gtk-icon-source: image(url("assets/indeterminate-symbolic.svg"));
+        background-color: $WINDOW;
+        -gtk-icon-source: image(-gtk-recolor(url("assets/indeterminate-symbolic.svg")));
     }
     &:checked:disabled{
         background-color: $C3DFACE;
-        -gtk-icon-source: image(url("assets/check-symbolic-disabled.svg"));
+        -gtk-icon-source: image(-gtk-recolor(url("assets/check-symbolic-disabled.svg")));
     }
 }
 
 %radio,
 radio {
     border-radius: 100%;
+    border-style: none;
     box-shadow: $radio_border;
-    background-color: $white;
+    background-color: $WINDOW;
+    color: $WINDOWTEXT;
     &:disabled {
         background-color: $C3DFACE;
     }
     &:checked {
-        -gtk-icon-source: image(url("assets/bullet-symbolic.svg"));
-        background-color: $white;
+        -gtk-icon-source: image(-gtk-recolor(url("assets/bullet-symbolic.svg")));
+        background-color: $WINDOW;
     }
 
     &:selected {
-        background-color: $white;
+        background-color: $WINDOW;
     }
     &:indeterminate {
-        -gtk-icon-source: image(url("assets/bullet-symbolic-indeterminate.svg"));
-        background-color: $white;
+        -gtk-icon-source: image(-gtk-recolor(url("assets/bullet-symbolic-indeterminate.svg")));
+        background-color: $WINDOW;
     }
     &:checked:disabled{
-        -gtk-icon-source: image(url("assets/bullet-symbolic-disabled.svg"));
+        -gtk-icon-source: image(-gtk-recolor(url("assets/bullet-symbolic-disabled.svg")));
         background-color: $C3DFACE;
     }
 }

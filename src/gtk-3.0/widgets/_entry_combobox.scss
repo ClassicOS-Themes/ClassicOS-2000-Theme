@@ -46,6 +46,12 @@ combobox {
         margin-top: 2px;
         margin-right: 2px;
     }
+    menu{
+        background-color: $WINDOW;
+        color: $WINDOWTEXT;
+        box-shadow: $combobox_menu_outline;
+        padding: 1px;
+    }
 }
 arrow,
 combobox arrow {

@@ -1,7 +1,29 @@
 
-popover{
-    background-color: $INFOBK;
+popover, popover.menu{
+    background-color: $WINDOW;
+    color: $WINDOWTEXT;
     box-shadow: none;
-    border: 1px solid #000;
-    outline: 1px solid #000;
+    border: 1px solid $WINDOWFRAME;
+	padding-top: 0;
+	padding-left: 0;
+	padding-right:0;
+	padding-bottom:0;
+
+	border-radius: 6px;
+
+
+    > stack > box
+    {
+        margin:-10px;
+        padding: 6px 0px;
+    }
+    modelbutton
+    {
+        padding:2px 8px;
+    }
+    modelbutton:hover
+    {
+        background-color:$HIGHLIGHT;
+        color: $HIGHLIGHTTEXT;
+    }
 }

@@ -65,19 +65,16 @@
 @mixin combobox_button($state)
 {
 	@if $state == pressed{
-		box-shadow: 		inset 0px 0px 0px 1px $C3DSHADOW;
+		box-shadow: 		$combobox_button_pressed_border;
 
 	} @else if $state == normal{
-		box-shadow:			inset 0px 0px 0px 2px $C3DHIGHLIGHT,
-							inset -1px -1px 0px 1px $C3DSHADOW,
-							inset 0px 0px 0px 1px $C3DFACE,
-							inset -1px -1px 0px 0px $BTNTEXT;
+		box-shadow:			$combobox_button_border;
 	}
 }
 
 @mixin disabled{
 		color: $GRAYTEXT;
-		text-shadow: 1px 1px $C3DHIGHLIGHT;
+		text-shadow: $disabled_text_shadow;
 		
 }
 
@@ -88,42 +85,3 @@
     color: $HIGHLIGHTTEXT;
   }
 }
-
-
-
-/* Notebook tab borders */
-$tab-top-active-border:			inset -2px 0px 0px 0px $C3DSHADOW,
-							inset 1px 1px 0px 0px $C3DHIGHLIGHT,
-							inset -1px 0px 0px 0px $BTNTEXT;
-$tab-top-border:			inset -2px 0px 0px 0px $C3DSHADOW,
-							inset 1px 1px 0px 0px $C3DHIGHLIGHT,
-							inset -1px 0px 0px 0px $BTNTEXT,
-							inset 0px -1px 0px 0px $C3DHIGHLIGHT;
-							
-$tab-btm-active-border:		inset -2px -2px 0px 0px $C3DSHADOW,
-							inset -1px -1px 0px 0px $BTNTEXT,
-							inset 1px 0px 0px 0px $C3DHIGHLIGHT;
-							
-$tab-btm-border:			inset -2px -2px 0px 0px $C3DSHADOW,
-							inset -1px -1px 0px 0px $BTNTEXT,
-							inset 1px 0px 0px 0px $C3DHIGHLIGHT,
-							inset 0 2px 0px 0px $BTNTEXT,
-							inset 0px 1px 0px 0px $C3DSHADOW;	
-$tab-left-active-border:	inset 0px -2px 0px 0px $C3DSHADOW,
-							inset 0px -1px 0px 0px $BTNTEXT,
-							inset 1px 1px 0px 0px $C3DHIGHLIGHT;
-							
-$tab-left-border:			inset 0px -2px 0px 0px $C3DSHADOW,
-							inset 1px 1px 0px 0px $C3DHIGHLIGHT,
-							inset 0px -1px 0px 0px $BTNTEXT,
-							inset -1px 0px 0px 0px $C3DHIGHLIGHT;	
-											
-$tab-right-active-border:	inset -2px -2px 0px 0px $C3DSHADOW,
-							inset -1px -1px 0px 0px $BTNTEXT,
-							inset 0px 1px 0px 0px $C3DHIGHLIGHT;
-							
-$tab-right-border:			inset -2px -2px 0px 0px $C3DSHADOW,
-							inset 0px 1px 0px 0px $C3DHIGHLIGHT,
-							inset -1px -1px 0px 0px $BTNTEXT,
-							inset 2px 0px 0px 0px $BTNTEXT,
-							inset 1px 0px 0px 0px $C3DSHADOW;

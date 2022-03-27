@@ -1,3 +1,4 @@
+$disabled_text_shadow:      1px 1px $C3DHIGHLIGHT;
 $fixed3d_border:		    inset 0px 0px 0px 2px $BTNTEXT,
                             inset -1px -1px 0px 1px $C3DHIGHLIGHT,
                             inset 0px 0px 0px 1px $C3DSHADOW,
@@ -7,11 +8,13 @@ $textbox_border:		    inset 0px 0px 0px 2px $BTNTEXT,
                             inset -1px -1px 0px 1px $C3DFACE,
                             inset 0px 0px 0px 1px $C3DSHADOW,
                             inset -1px -1px 0px 0px $C3DHIGHLIGHT;
+
                                                     
 $check_border:		        inset 0px 0px 0px 2px $BTNTEXT,
                             inset -1px -1px 0px 1px $C3DFACE,
                             inset 0px 0px 0px 1px $C3DSHADOW,
                             inset -1px -1px 0px 0px $C3DHIGHLIGHT;
+
 $radio_border:		    
                             inset 0px 0px 0px 3px $BTNTEXT,
                             inset -2px 0px 0px 1px $C3DFACE,
@@ -21,11 +24,19 @@ $radio_border:
                             inset -1px -1px 0px 1px $C3DHIGHLIGHT,
                             inset 0px -1px 0px 1px $C3DHIGHLIGHT,
                             inset -1px 0px 0px 1px $C3DHIGHLIGHT,
-                            inset 0px 0px 0px 1.05px $C3DFACE;				
+                            inset 0px 0px 0px 1.05px $C3DFACE;	
+
+$combobox_button_border: 	inset 0px 0px 0px 2px $C3DHIGHLIGHT,
+                            inset -1px -1px 0px 1px $C3DSHADOW,
+                            inset 0px 0px 0px 1px $C3DFACE,
+                            inset -1px -1px 0px 0px $BTNTEXT;
+$combobox_button_pressed_border: inset 0px 0px 0px 1px $C3DSHADOW;
+$combobox_menu_outline: inset 0px 0px 0px 1px $WINDOWFRAME;
 $progressbar_border: 	    0px -1px 0px 0px $C3DSHADOW,
                             -1px 0px 0px 0px $C3DSHADOW,
                             -1px -1px 0px 0px $C3DSHADOW,
                              0px 0px 0px 1px $C3DHIGHLIGHT;
+
 $menu_border: 			    inset 0px 0px 0px 2px $C3DHIGHLIGHT,
                             inset -1px -1px 0px 1px $C3DSHADOW,
                             inset 0px 0px 0px 1px $C3DFACE,
@@ -112,3 +123,6 @@ $tab-right-border:			inset -2px -2px 0px 0px $C3DSHADOW,
                             inset -1px -1px 0px 0px $BTNTEXT,
                             inset 2px 0px 0px 0px $BTNTEXT,
                             inset 1px 0px 0px 0px $C3DSHADOW;
+$tab_stack_shadow:   		inset -1px -1px 0px 1px $C3DSHADOW,
+                            inset 0px 0px 0px 1px $C3DHIGHLIGHT,
+                            inset -1px -1px 0px 0px $BTNTEXT;

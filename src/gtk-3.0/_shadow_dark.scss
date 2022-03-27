@@ -1,0 +1,113 @@
+$disabled_text_shadow:      1px 1px darken($C3DHIGHLIGHT, 15%);
+$fixed3d_border:		    inset 0px 0px 0px 2px darken($C3DSHADOW,5%),
+                            inset 0px 0px 0px 1px $C3DSHADOW,
+                            inset -1px -1px 0px 0px darken($C3DHIGHLIGHT,15%);
+                            
+$textbox_border:		    $fixed3d_border;
+                            
+                                                    
+$check_border:		        $fixed3d_border;
+
+$radio_border:		        $fixed3d_border;
+
+$combobox_button_border: 	inset 0px 0px 0px 2px darken($C3DHIGHLIGHT, 15%),
+                            inset -1px -1px 0px 1px $C3DSHADOW,
+                            inset 0px 0px 0px 1px $C3DFACE,
+                            inset -1px -1px 0px 0px darken($C3DSHADOW,5%);
+$combobox_button_pressed_border: inset 0px 0px 0px 1px $C3DSHADOW;
+$combobox_menu_outline: inset 0px 0px 0px 1px darken($C3DHIGHLIGHT, 15%);
+
+$progressbar_border: 	    0px -1px 0px 0px $C3DSHADOW,
+                            -1px 0px 0px 0px $C3DSHADOW,
+                            -1px -1px 0px 0px $C3DSHADOW,
+                             0px 0px 0px 1px darken($C3DHIGHLIGHT,15%);
+
+$menu_border: 			    inset 0px 0px 0px 2px darken($C3DHIGHLIGHT,15%),
+                            inset -1px -1px 0px 1px darken($C3DSHADOW,5%),
+                            inset 0px 0px 0px 1px $C3DDKSHADOW,
+                            inset -1px -1px 0px 0px $C3DSHADOW;
+
+$slim_border: 			    inset 0px 0px 0px 2px $C3DSHADOW,
+                            inset 2px 2px 0px 0px darken($C3DHIGHLIGHT,15%),
+                            inset -2px -2px 0px 0px $C3DSHADOW,
+                            inset -1px -1px 0px 0px darken($C3DHIGHLIGHT,15%),
+                            inset 0px -1px 0px 0px darken($C3DHIGHLIGHT,15%),
+                            inset -1px 0px 0px 0px darken($C3DHIGHLIGHT,15%),
+                            inset 1px 1px 0px 0px $C3DSHADOW,
+                            inset 0px 1px 0px 0px $C3DSHADOW,
+                            inset 1px 0px 0px 0px $C3DSHADOW,
+                            inset 0px -1px 0px 0px darken($C3DHIGHLIGHT,15%),
+                            inset -1px 0px 0px 0px darken($C3DHIGHLIGHT,15%);
+
+$window_border:			    0px 0px 0px 3px darken($C3DSHADOW,5%),
+                            -1px -1px 0px 2px $C3DFACE,
+                            -1px 0px 0px 2px $C3DFACE,
+                            0px -1px 0px 2px $C3DFACE,
+                            0px 0px 0px 2px $C3DSHADOW,
+                            -1px -1px 0px 1px darken($C3DHIGHLIGHT, 15%),
+                            -1px 0px 0px 1px darken($C3DHIGHLIGHT, 15%),
+                            0px -1px 0px 1px darken($C3DHIGHLIGHT, 15%),
+                            0px 0px 0px 1px $C3DFACE;
+$button_border_normal:      inset -1px -1px 0px 1px $C3DSHADOW,
+                            inset 0px 0px 0px 1px darken($C3DHIGHLIGHT, 15%),
+                            inset -1px -1px 0px 0px darken($C3DSHADOW,5%);
+$button_border_pressed:	    inset 0px 0px 0px 2px $C3DSHADOW,
+                            inset 0px 0px 0px 1px darken($C3DSHADOW,5%);
+$button_border_default:	    inset -1px -1px 0px 2px $C3DSHADOW,
+                            inset 0px 0px 0px 2px darken($C3DHIGHLIGHT, 15%),
+                            inset 0px 0px 0px 1px darken($C3DSHADOW,5%),
+                            inset -1px -1px 0px 1px darken($C3DSHADOW,5%);
+$button_border_checked:	    inset 0px 0px 0px 2px $C3DSHADOW,
+                            inset -1px -1px 0px 1px $C3DLIGHT,
+                            inset 0px 0px 0px 1px darken($C3DSHADOW,5%),
+                            inset -1px -1px 0px 0px darken($C3DHIGHLIGHT, 15%);
+$flatbt_border_normal:      none;
+$flatbt_border_hover: 	    inset 0px 0px 0px 1px darken($C3DHIGHLIGHT, 15%),
+                            inset -1px -1px 0px 0px $C3DSHADOW;
+$flatbt_border_pressed:	    inset 0px 0px 0px 1px $C3DSHADOW,
+                            inset -1px -1px 0px 0px darken($C3DHIGHLIGHT, 15%);
+
+
+$separator_horiz: 		    inset 0px -1px 0px 0px darken($C3DHIGHLIGHT, 15%),
+                            inset 0px 1px 0px 0px $C3DSHADOW;
+$separator_verti: 		    inset -1px 0px 0px 0px darken($C3DHIGHLIGHT, 15%),
+                            inset 1px 0px 0px 0px $C3DSHADOW;
+/* Notebook tab borders */
+$tab-top-active-border:		inset -2px 0px 0px 0px $C3DSHADOW,
+                            inset 1px 1px 0px 0px darken($C3DHIGHLIGHT, 15%),
+                            inset -1px 0px 0px 0px darken($C3DSHADOW,5%);
+$tab-top-border:			inset -2px 0px 0px 0px $C3DSHADOW,
+                            inset 1px 1px 0px 0px darken($C3DHIGHLIGHT, 15%),
+                            inset -1px 0px 0px 0px darken($C3DSHADOW,5%),
+                            inset 0px -1px 0px 0px darken($C3DHIGHLIGHT, 15%);
+                            
+$tab-btm-active-border:		inset -2px -2px 0px 0px $C3DSHADOW,
+                            inset -1px -1px 0px 0px darken($C3DSHADOW,5%),
+                            inset 1px 0px 0px 0px darken($C3DHIGHLIGHT, 15%);
+                            
+$tab-btm-border:			inset -2px -2px 0px 0px $C3DSHADOW,
+                            inset -1px -1px 0px 0px darken($C3DSHADOW,5%),
+                            inset 1px 0px 0px 0px darken($C3DHIGHLIGHT, 15%),
+                            inset 0 2px 0px 0px darken($C3DSHADOW,5%),
+                            inset 0px 1px 0px 0px $C3DSHADOW;	
+$tab-left-active-border:	inset 0px -2px 0px 0px $C3DSHADOW,
+                            inset 0px -1px 0px 0px darken($C3DSHADOW,5%),
+                            inset 1px 1px 0px 0px darken($C3DHIGHLIGHT, 15%);
+                            
+$tab-left-border:			inset 0px -2px 0px 0px $C3DSHADOW,
+                            inset 1px 1px 0px 0px darken($C3DHIGHLIGHT, 15%),
+                            inset 0px -1px 0px 0px darken($C3DSHADOW,5%),
+                            inset -1px 0px 0px 0px darken($C3DHIGHLIGHT, 15%);	
+                                            
+$tab-right-active-border:	inset -2px -2px 0px 0px $C3DSHADOW,
+                            inset -1px -1px 0px 0px darken($C3DSHADOW,5%),
+                            inset 0px 1px 0px 0px darken($C3DHIGHLIGHT, 15%);
+                            
+$tab-right-border:			inset -2px -2px 0px 0px $C3DSHADOW,
+                            inset 0px 1px 0px 0px darken($C3DHIGHLIGHT, 15%),
+                            inset -1px -1px 0px 0px darken($C3DSHADOW,5%),
+                            inset 2px 0px 0px 0px darken($C3DSHADOW,5%),
+                            inset 1px 0px 0px 0px $C3DSHADOW;
+$tab_stack_shadow:   		inset -1px -1px 0px 1px $C3DSHADOW,
+                            inset 0px 0px 0px 1px darken($C3DHIGHLIGHT, 15%),
+                            inset -1px -1px 0px 0px darken($C3DSHADOW,5%);

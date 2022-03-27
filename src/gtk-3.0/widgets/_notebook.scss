@@ -160,11 +160,7 @@
         padding: 4px;
         background-clip: border-box;
         border:none;
-        box-shadow:		inset -1px -1px 0px 1px $C3DSHADOW,
-                        inset 0px 0px 0px 1px $C3DHIGHLIGHT,
-                        inset -1px -1px 0px 0px $BTNTEXT;
-
-        
+        box-shadow:		$tab_stack_shadow;
     }
 
 
