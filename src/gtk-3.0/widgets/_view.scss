@@ -45,7 +45,7 @@ treeview>header>button{
 .rubberband,
 rubberband {
   border: 1px dotted $GRAYTEXT;
-  background-color: transparentize($HIGHLIGHT, 1);
+  background-color: transparent;
 }
 
 // For some reason nemo and caja doesn't respect the 'dotted' border style
