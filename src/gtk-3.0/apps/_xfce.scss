@@ -147,3 +147,35 @@ notebook#xfce4-terminal-notebook
 		}
 	}
 }
+
+/*
+XfdesktopIconView
+*/
+
+XfdesktopIconView.view {
+	background: transparent;
+	color: $HIGHLIGHTTEXT;
+	border-radius: 0px;
+}
+XfdesktopIconView.view:active {
+	background: transparentize($HIGHLIGHT, 0.5);
+	text-shadow: 0 1px 1px black;
+}
+XfdesktopIconView.view .label {
+	text-shadow: 1px 1px 2px black;
+}
+XfdesktopIconView.view .label:active {
+	color: $HIGHLIGHTTEXT;
+}
+XfdesktopIconView .rubberband {
+	// Use default rubberband style
+	background-color: transparentize($HIGHLIGHT, 0.99); // Fixes background not being redrawn
+	// Seems if the background is transparent, the region inside the selection
+	// rectangle does not get invalidated (over-optimized perhaps?), leaving 
+	// artifacts from the border line visible inside the rectangle.
+	// Setting it to an almost-transparent color is an acceptable workaround for now.
+	border-radius: 0;
+}
+XfdesktopIconView:active {
+	color: $HIGHLIGHT;
+}
