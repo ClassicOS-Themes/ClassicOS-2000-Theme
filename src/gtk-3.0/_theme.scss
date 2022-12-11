@@ -59,6 +59,7 @@ background-color: $HIGHLIGHT;
 }
 }
 
+selection { @extend %selected_items; }
 
 decoration {
     border-style: none;

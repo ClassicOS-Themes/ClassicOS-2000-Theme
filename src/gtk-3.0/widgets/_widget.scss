@@ -13,6 +13,23 @@
   color: $BTNTEXT;
   background-color: $C3DFACE;
 
+  text-shadow: none;
+
+  &:hover {
+    color: $BTNTEXT;
+    background-color: $C3DFACE;  
+  }
+
+  &:active {
+    color: $BTNTEXT;
+    background-color: $C3DFACE;
+  }
+
+  &:disabled {
+    color: $GRAYTEXT;
+    background-color: $C3DFACE;
+  }
+
   &:selected {
     color: $HIGHLIGHTTEXT;
     background-color: $HIGHLIGHT;
