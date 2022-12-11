@@ -48,10 +48,13 @@ rubberband {
   background-color: transparentize($HIGHLIGHT, 1);
 }
 
-// For some reason nemo doesn't respect the 'dotted' border style
+// For some reason nemo and caja doesn't respect the 'dotted' border style
 // so we'll just use the "modern" translucent background style
-.nemo-window .rubberband,
-.nemo-window rubberband {
-  border: 1px solid darken($HIGHLIGHT, 0.1);
-  background-color: transparentize($HIGHLIGHT, 0.8);
-}
+.nemo-window, .caja-navigation-window{
+  .rubberband,
+   rubberband {
+    border: 1px solid darken($HIGHLIGHT, 0.1);
+    background-color: transparentize($HIGHLIGHT, 0.8);
+  }
+
+} 
